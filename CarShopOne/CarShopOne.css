@@ -1,0 +1,124 @@
+/* Normalisation */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: Helvetica, Arial, Helvetica, sans-serif;
+}
+/* Root */
+:root {
+  --page-padding: 0px 8%;
+  --main-bg: #f8f8f8;
+  --box-bg: #ebebebe8;
+  --name-color: #232323;
+  --card-bg-text: #343434;
+  --shadow: #232323;
+  --shadow-btn: #232323;
+}
+
+.dark:root {
+  --main-bg: #131313;
+  --box-bg: #171616e5;
+  --name-color: #f8f8f8;
+  --card-bg-text: #ffffff;
+  --shadow-btn: #000000;
+}
+.mode-switch {
+  background-color: transparent;
+  border: none;
+  color: var(--name-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+/* Start header style */
+/* Start nav style */
+html{
+  background-color: var(--main-bg);
+  transition: all 0.2s;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--page-padding);
+  align-items: center;
+  height: 90px;
+  text-align: center;
+  background-color: var(--main-bg);
+}
+header nav div.nav-title {
+  display: flex;
+  color: var(--name-color);
+}
+header nav div.nav-title i {
+  font-size: 1.6em;
+  margin-right: 5px;
+}
+header nav div.nav-iteams {
+  display: flex;
+  gap: 30px;
+
+}
+header nav div.nav-iteams div:first-child{
+display: flex;
+gap: 30px;
+margin-top: 10px;
+}
+header nav div.nav-iteams a {
+  color: var(--name-color);
+}
+input {
+  font-size: 1em;
+  border: 0;
+  padding: 10px;
+  padding-right: 50px;
+  box-shadow: 1px 0px 1px;
+}
+div.nav-inp a {
+  color: white !important;
+  background-color: var(--shadow);
+  border-right: 1px solid var(--name-color);
+  border-top: 1px solid var(--name-color);
+  border-bottom: 1px solid var(--name-color);
+  padding: 10px 30px;
+  font-size: 0.9em;
+  position: relative;
+  top: 0.4px;
+  left: -10px;
+  transition: all 0.5s;
+}
+/* End nav style */
+
+header div.header-bg{
+  position: relative;
+}
+header div.header-bg img{
+width: 100%;
+}
+header div.header-bg a{
+  position: absolute;
+  bottom: 10%;
+  left: 3%;
+  background-color: var(--main-bg);
+  color: var(--name-color) !important;
+  transition: all 0.5s;
+  padding: 12.1px 30px;
+  font-size: 0.9em;
+}
+header div.header-bg a:hover{
+  background-color: var(--name-color);
+  color: var(--box-bg) !important;
+  scale: 1.1;
+}
+/* End header style */
+
+/* Start main style */
+
+/* End main style */
+
+/* Start Footer style */
+
+/* End Footer style */

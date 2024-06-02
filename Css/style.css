@@ -1,0 +1,431 @@
+/* Normalization */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: Helvetica, Arial, Helvetica, sans-serif;
+}
+/* Root */
+:root {
+  --page-padding: 0px 8%;
+  --main-bg: #f8f8f8;
+  --box-bg: #ebebebe8;
+  --name-color: #232323;
+  --card-bg-text: #343434;
+  --shadow: #232323;
+  --shadow-btn: #232323;
+}
+
+.dark:root {
+  --main-bg: #131313;
+  --box-bg: #171616e5;
+  --name-color: #f8f8f8;
+  --card-bg-text: #ffffff;
+  --shadow-btn: #000000;
+}
+html{
+  background-color: var(--main-bg);
+  transition: all 0.5s;
+  color: var(--name-color);
+}
+/* Start header style */
+/* Start nav style */
+nav {
+  background-color: var(--box-bg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  padding: var(--page-padding);
+}
+.mode-switch {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: var(--name-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+h1 {
+  color: var(--name-color);
+}
+a.Search,
+a.Cars {
+  margin-top: 10px;
+}
+header nav ul li.pages {
+  display: flex;
+  gap: 30px;
+}
+header nav ul li a {
+  color: var(--name-color) !important;
+  transition: all 0.5s;
+}
+header nav ul li a:hover {
+  font-size: 1.1em;
+}
+.drop-menu {
+  position: fixed;
+  height: 0%;
+  top: 10%;
+  left: 50px;
+  right: 50px;
+  background-color: var(--box-bg);
+  transition: all 0.5s;
+  border-radius: 0 0 10px 10px;
+}
+.drop-menu {
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+header nav ul li a:hover .drop-menu {
+  height: 80%;
+  opacity: 1;
+}
+
+/* End nav style */
+/* Start section-1 style */
+header .section-1 {
+  display: flex;
+  padding: var(--page-padding);
+  margin-top: 65px;
+  align-items: center;
+  justify-content: space-between;
+}
+header .section-1 div.section-1-product-dis {
+  margin-bottom: 6%;
+}
+header .section-1 div h3 {
+  font-size: 3em;
+  overflow: hidden;
+}
+header .section-1 div p {
+  margin-top: 35px;
+}
+header .section-1 > div > a {
+  position: relative;
+  bottom: -100px;
+  color: var(--name-color);
+  border: 1px solid var(--name-color);
+  padding: 15px 45px;
+  font-size: 0.9em;
+  border-radius: 9px;
+  transition: all 0.5s;
+}
+header .section-1 > div > a:hover {
+  background-color: var(--name-color);
+  color: var(--main-bg);
+}
+div.section-1-product-img {
+  display: flex;
+}
+/* start product cards */
+img#section-1-product-img-1 {
+  display: flex;
+  width: 60%;
+  height: 92.7%;
+  border-radius: 40px;
+  position: relative;
+  left: 30%;
+  top: 65px;
+  box-shadow: 1px 3px 4px var(--shadow);
+  transition: all 0.5s;
+  opacity: 1;
+  cursor: pointer;
+}
+#section-1-product-img-1:hover {
+  opacity: 1;
+  left: -40px;
+}
+img#section-1-product-img-2 {
+  position: absolute;
+  width: 27%;
+  height: 70.2%;
+  top: 15.5%;
+  left: 65%;
+  border-radius: 40px;
+  box-shadow: 1px 3px 4px var(--shadow);
+  transition: all 0.5s;
+  opacity: 1;
+  cursor: pointer;
+}
+img#section-1-product-img-2:hover {
+  left: 44%;
+  opacity: 1;
+}
+img#section-1-product-img-3 {
+  position: absolute;
+  width: 25%;
+  height: 70.2%;
+  top: 15.5%;
+  left: 69%;
+  border-radius: 40px;
+  box-shadow: 1px 3px 4px var(--shadow);
+  transition: all 0.5s;
+  opacity: 1;
+  cursor: pointer;
+}
+img#section-1-product-img-3:hover {
+  scale: 1.05;
+}
+/* End section-1 style */
+/* End header style */
+
+/* Start main style */
+/* Start section-2 style */
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.section-2 h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  padding: var(--page-padding);
+}
+.section-2-product-div {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.section-2-product-div div img {
+  width: 300px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.section-2-product-div div {
+  filter: grayscale(100%);
+  transition: all 0.4s;
+}
+.section-2-product-div div:hover {
+  scale: 1.05;
+  filter: grayscale(-0%);
+}
+
+.section-2 p {
+  margin-top: 10px;
+  font-weight: 600;
+}
+.section-2 h2 {
+  margin: 10% 0;
+  text-align: center;
+}
+
+/* End section-2 style */
+/* Start section-3 style */
+
+.section-3 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--page-padding);
+  gap: 40px;
+}
+.section-3 .section-3-Description-div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section-3 .section-3-Description-div h3 {
+  font-size: 2em;
+}
+.section-3 .section-3-Description-div div {
+  margin-top: 80px;
+  color: black;
+}
+.section-3 .section-3-Description-div div a {
+  color: var(--name-color);
+  border: 1px solid var(--name-color);
+  padding: 15px 45px;
+  font-size: 0.9em;
+  border-radius: 9px;
+  transition: all 0.5s;
+}
+.section-3 .section-3-Description-div div a:hover {
+  background-color: var(--name-color);
+  color: var(--bg-color);
+}
+.section-3 .section-3-product-div {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.section-3 .section-3-product-div img {
+  box-shadow: 1px 1px 2px var(--shadow);
+  width: 200px;
+  border-radius: 15px;
+}
+.section-3 .section-3-product-div p.car-number {
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+.section-3 .section-3-product-div-2 img {
+  height: 88%;
+}
+/* End section-3 style */
+/* Start section-4 style */
+.section-4 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 100px 0;
+}
+.section-4 img {
+  width: 600px;
+  border-radius: 15px;
+}
+.section-4-div-img {
+  position: relative;
+  transition: all 0.5s;
+}
+.section-4-div-img:hover {
+  scale: 1.01;
+}
+div.img-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  bottom: 50px;
+  right: 0px;
+  background: var(--main-bg);
+  width: 170px;
+  height: 70px;
+  box-shadow: -8px 4px 12px 0px var(--shadow);
+  border-radius: 5px 0px 0px 5px;
+  transition: all 0.5s;
+}
+div.img-cards p {
+  margin: 3px 20px;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+div.img-cards p:first-child {
+  font-size: 0.7em;
+  cursor: text;
+}
+div.img-cards:hover {
+  right: 10px;
+  border-radius: 5px;
+  box-shadow: -2px 2px 10px 1px var(--shadow);
+}
+div.section-4-Description {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+div.section-4-Description p {
+  font-size: 1.5em;
+}
+div.section-4-Description p:first-child {
+  opacity: 0.7;
+  font-size: 0.8em;
+}
+/* End section-4 style */
+/* Start section-5 style */
+.section-5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+.section-5 h3 {
+  margin: 10px 0px;
+  font-size: 1.8em;
+}
+.section-5 input {
+  margin: 50px 0px;
+  font-size: 1.1em;
+  border: 0;
+  margin-bottom: 100px;
+  padding: 10px;
+  padding-right: 300px;
+  box-shadow: 1px 0px 1px;
+}
+.section-5 a {
+  color: white;
+  background-color: var(--shadow);
+  border-right: 1px solid var(--name-color);
+  border-top: 1px solid var(--name-color);
+  border-bottom: 1px solid var(--name-color);
+  padding: 12.5px 45px;
+  font-size: 0.8em;
+  transition: all 0.5s;
+  position: relative;
+  top: -1.3px;
+  left: -10px;
+}
+/* End section-5 style */
+/* End main style */
+
+/* Start Footer style */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--page-padding);
+  height: 300px;
+  box-shadow: 0px -10px 20px -20px black;
+  padding-top: 65px;
+}
+footer .title {
+  padding-top: 10px;
+}
+footer h5 {
+  opacity: 0.5;
+  font-size: 0.7em;
+}
+footer .footer-sec-1,
+.footer-sec-2,
+.footer-sec-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  cursor: pointer;
+}
+.lang {
+  cursor: pointer;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s;
+}
+.lang:hover .lang-menu {
+  display: inline-block;
+  opacity: 1;
+}
+.lang-menu {
+  margin: 10px;
+  display: none;
+  opacity: 0;
+  transition: all 0.5s !important;
+}
+
+footer a{
+  transition: all 0.3s;
+}
+footer a:hover {
+  scale: 1.1;
+}
+/* End Footer style */
+.under-footer-dis {
+  padding: 50px 0px;
+  text-align: center;
+}

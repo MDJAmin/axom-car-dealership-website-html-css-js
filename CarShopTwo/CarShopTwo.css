@@ -1,0 +1,52 @@
+/* Normalisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Helvetica, Arial, Helvetica, sans-serif;
+  }
+  /* Root */
+  :root {
+    --page-padding: 0px 8%;
+    --main-bg: #f8f8f8;
+    --box-bg: #ebebebe8;
+    --name-color: #232323;
+    --card-bg-text: #343434;
+    --shadow: #232323;
+    --shadow-btn: #232323;
+  }
+  
+  .dark:root {
+    --main-bg: #131313;
+    --box-bg: #171616e5;
+    --name-color: #f8f8f8;
+    --card-bg-text: #ffffff;
+    --shadow-btn: #000000;
+  }
+  .mode-switch {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    color: var(--name-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+  }
+  /* Start nav style */
+
+  /* End nav style */
+  
+  /* Start header style */
+
+  /* End header style */
+  
+  /* Start main style */
+
+  /* End main style */
+  
+  /* Start Footer style */
+
+  /* End Footer style */
