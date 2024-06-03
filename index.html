@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <button onclick="topFunction()" id="go-top" title="Go to top" class="animate__animated animate__rubberBand">Top <i class='bx bxs-to-top'></i> </button>
     <!-- Start header -->
     <header>
         <nav class="animate__animated animate__fadeIn">
@@ -19,7 +20,7 @@
                     <h1> Car Selection</h1>
                 </li>
                 <li class="pages">
-                    <a class="Home" href="">Home</a>
+                    <a class="Home" href="./index.html">Home</a>
                     <a class="Browse-cars" href="./CarShopOne/CarShopOne.html">Car Shop 1
                         <div class="drop-menu"></div>
                     </a>
@@ -28,8 +29,8 @@
                     </a>
                 </li>
                 <li class="pages">
-                    <a class="Search" href="">Search</a>
-                    <a class="Cars" href=""> Cars (0)</a>
+                    <a class="Search" href="#">Search</a>
+                    <a class="Cars" href="#"> Cars (0)</a>
                     <button id="Moon" class="mode mode-switch" title="Switch Theme">
                         <svg class="moon" fill="none" stroke="currentColor" stroke-linecap="round"
                             stroke-linejoin="round" stroke-width="2" width="36" height="36" viewBox="0 0 24 24">
@@ -45,7 +46,7 @@
                 <h3>Find the perfect car for
                     your lifestyle</h3>
                 <p>Stunning cars that inspire your next adventure.</p>
-                <a href="">Explore Now</a>
+                <a href="#">Explore Now</a>
             </div>
             <div class="section-1-product-img">
                 <div class="section-1-div-product-img-1 ">
@@ -93,28 +94,28 @@
             <!-- End section-2 -->
             <!-- Start section-3 -->
             <section class="section-3">
-                <div class="section-3-Description-div">
+                <div class="section-3-Description-div hidden">
                     <h3>Featured</h3>
                     <p>Our cars are top-notch quality, we prioritize <br>
                         safety and comfort. But please drive <br>
                         responsibly</p>
                     <div>
-                        <a href="">View Top Picks</a>
+                        <a href="#">View Top Picks</a>
                     </div>
                 </div>
                 <div class="section-3-product-div">
-                    <div class="section-3-product-div-1"><img src="./Assets/Product/Page 1/Section-3/Image (7).jpeg"
-                            alt="">
+                    <div class="section-3-product-div-1 hidden"><img src="./Assets/Product/Page 1/Section-3/Image (7).jpeg"
+                            alt="car picture (5)">
                         <p class="car-number">Car 1</p>
                         <p>15000$</p>
                     </div>
-                    <div class="section-3-product-div-2"><img src="./Assets/Product/Page 1/Section-3/Image (6).jpeg"
-                            alt="">
+                    <div class="section-3-product-div-2 hidden"><img src="./Assets/Product/Page 1/Section-3/Image (6).jpeg"
+                            alt="car picture (6)">
                         <p class="car-number">Car 2</p>
                         <p>7000$</p>
                     </div>
-                    <div class="section-3-product-div-3"><img src="./Assets/Product/Page 1/Section-3/Image (5).jpeg"
-                            alt="">
+                    <div class="section-3-product-div-3 hidden"><img src="./Assets/Product/Page 1/Section-3/Image (5).jpeg"
+                            alt="car picture (7)">
                         <p class="car-number">Car 3</p>
                         <p>5000$</p>
                     </div>
@@ -124,7 +125,7 @@
             <!-- Start section-4 -->
             <section class="section-4">
                 <div class="section-4-product-div-1">
-                    <div class="section-4-div-img"><img src="./Assets/Product/Page 1/Section-4/Image (9).jpeg" alt="">
+                    <div class="section-4-div-img"><img src="./Assets/Product/Page 1/Section-4/Image (9).jpeg" alt="car picture (8)">
                         <div class="img-cards">
                             <p>Written by</p>
                             <p>Alex Johnson</p>
@@ -136,7 +137,7 @@
                     </div>
                 </div>
                 <div class="section-4-product-div-2">
-                    <div class="section-4-div-img"><img src="./Assets/Product/Page 1/Section-4/Image (8).jpeg" alt="">
+                    <div class="section-4-div-img"><img src="./Assets/Product/Page 1/Section-4/Image (8).jpeg" alt="car picture (9)">
                         <div class="img-cards">
                             <p>Written by</p>
                             <p>Emily White</p>
@@ -151,10 +152,13 @@
             <!-- End section-4 -->
             <!-- Start section-5 -->
             <section class="section-5">
-                <h3>Get 15% off your next purchase, Subscribe to our <br> Newsletter</h3>
+                <div class="hidden">
+                    <h3>Get 15% off your next purchase, Subscribe to our <br> Newsletter</h3>
+                </div>
+                
                 <div>
                     <input type="email" placeholder="Enter your email here">
-                    <a href="">Subscribe</a>
+                    <a href="#">Subscribe</a>
                 </div>
             </section>
             <!-- Start section-5 -->

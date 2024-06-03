@@ -75,7 +75,7 @@ input {
   border: 0;
   padding: 10px;
   padding-right: 50px;
-  box-shadow: 1px 0px 1px;
+  box-shadow: -2px 1px 1px;
 }
 div.nav-inp a {
   color: white !important;
