@@ -54,8 +54,8 @@ html {
   background-color: #d0d0d0;
 }
 #go-top i {
-position: relative;
-top: 1.7px;
+  position: relative;
+  top: 1.7px;
 }
 
 /* Start header style */
@@ -159,7 +159,7 @@ header .section-1 > div > a:hover {
 div.section-1-product-img {
   display: flex;
 }
-/* start product cards */
+/* start product cards header*/
 img#section-1-product-img-1 {
   display: flex;
   width: 60%;
@@ -175,6 +175,7 @@ img#section-1-product-img-1 {
 }
 #section-1-product-img-1:hover {
   opacity: 1;
+  top: 100px;
   left: -125px;
 }
 img#section-1-product-img-2 {
@@ -191,6 +192,7 @@ img#section-1-product-img-2 {
 }
 img#section-1-product-img-2:hover {
   left: 45%;
+  top: 20%;
   opacity: 1;
 }
 img#section-1-product-img-3 {
@@ -439,8 +441,7 @@ img#section-1-product-img-3:hover {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-  transition:all 0.5s;
-
+  transition: all 0.5s;
 }
 .section-3 .section-3-product-div img {
   box-shadow: 1px 1px 2px var(--shadow);
@@ -471,7 +472,7 @@ img#section-1-product-img-3:hover {
   transition: all 0.5s;
 }
 .section-4-div-img:hover {
-  scale: 1.01;
+  scale: 1.05;
 }
 div.img-cards {
   display: flex;
@@ -536,6 +537,7 @@ div.section-4-Description p:first-child {
   padding: 10px;
   padding-right: 300px;
   box-shadow: 1px 0px 1px;
+  outline: none;
 }
 .section-5 a {
   color: white;
@@ -550,54 +552,62 @@ div.section-4-Description p:first-child {
   top: -1.3px;
   left: -10px;
 }
+.section-5 a:hover{
+  background-color: rgb(67, 67, 67)
+}
 /* End section-5 style */
 /* End main style */
+
 /* style for hidden iteams*/
-.hidden{
+/* animation 1 */
+.hidden {
   opacity: 0;
   transition: all 2s;
   transform: translateX(100%);
 }
-.show{
-  opacity: 1;
-  scale: 1;  transform: translateX(0);
-}
-
-.hiddenP{
+/* animation 2 */
+.hiddenP {
   opacity: 0;
-  scale: 1;
+  scale: 0.9;
   transition: all 1.3s;
 }
-
-.showP{
-  scale: 1.1;
-  opacity: 1 !important;
-}
-
-.hiddenCardsOne{
+/* animation 3 */
+.hiddenCardsOne {
   opacity: 0;
   transition: all 1.5s;
   transform: translateX(100%);
 }
-.hiddenCardsTwo{
+.hiddenCardsTwo {
   opacity: 0;
   transition: all 1.5s;
   transform: translateX(-100%);
 }
 
-.showCards{
-  opacity: 1 !important;
-  scale: 1;  transform: translateX(0);
-}
-.up-hidden{
+/* animation 4 */
+.up-hidden-input {
   opacity: 0;
   transition: all 1.5s;
   transform: translatey(100%);
 }
-.up-show{
+
+/*Show*/
+.show {
+  opacity: 1;
+  scale: 1;
+  transform: translateX(0);
+  transform: translatey(0);
+}
+/* animation 5 footer */
+.up-hidden {
+  opacity: 0;
+  transition: all 1.5s;
+  transform: translatey(100%);
+}
+.up-show {
   transform: translatey(0%);
   opacity: 1;
 }
+
 /* Start Footer style */
 footer {
   display: flex;
@@ -656,4 +666,3 @@ footer a:hover {
 }
 
 /* footer hide style */
-
