@@ -366,7 +366,7 @@ img#section-1-product-img-3:hover {
 .section-2 {
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 7.8%;
 }
 .section-2 h3 {
   font-size: 2em;
@@ -441,17 +441,6 @@ img#section-1-product-img-3:hover {
   flex-wrap: wrap;
   transition:all 0.5s;
 
-}
-.hidden{
-  opacity: 0;
-  scale: 0.9;
-  transition: all 2s;
-  /* transform: translateX(400%); */
-}
-.show{
-  opacity: 1;
-  scale: 1;
-  /* transform: translateX(0) !important; */
 }
 .section-3 .section-3-product-div img {
   box-shadow: 1px 1px 2px var(--shadow);
@@ -563,7 +552,52 @@ div.section-4-Description p:first-child {
 }
 /* End section-5 style */
 /* End main style */
+/* style for hidden iteams*/
+.hidden{
+  opacity: 0;
+  transition: all 2s;
+  transform: translateX(100%);
+}
+.show{
+  opacity: 1;
+  scale: 1;  transform: translateX(0);
+}
 
+.hiddenP{
+  opacity: 0;
+  scale: 1;
+  transition: all 1.3s;
+}
+
+.showP{
+  scale: 1.1;
+  opacity: 1 !important;
+}
+
+.hiddenCardsOne{
+  opacity: 0;
+  transition: all 1.5s;
+  transform: translateX(100%);
+}
+.hiddenCardsTwo{
+  opacity: 0;
+  transition: all 1.5s;
+  transform: translateX(-100%);
+}
+
+.showCards{
+  opacity: 1 !important;
+  scale: 1;  transform: translateX(0);
+}
+.up-hidden{
+  opacity: 0;
+  transition: all 1.5s;
+  transform: translatey(100%);
+}
+.up-show{
+  transform: translatey(0%);
+  opacity: 1;
+}
 /* Start Footer style */
 footer {
   display: flex;
@@ -620,3 +654,6 @@ footer a:hover {
   padding: 50px 0px;
   text-align: center;
 }
+
+/* footer hide style */
+
