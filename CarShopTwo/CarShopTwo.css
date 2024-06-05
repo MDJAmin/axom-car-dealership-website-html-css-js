@@ -12,16 +12,20 @@
     --page-padding: 0px 8%;
     --main-bg: #f8f8f8;
     --box-bg: #ebebebe8;
+    --nav-bg: rgb(240, 235, 235);
     --name-color: #232323;
+    --header-btnH-color: #0b6ab8;
     --card-bg-text: #343434;
     --shadow: #232323;
     --shadow-btn: #232323;
   }
   
   .dark:root {
-    --main-bg: #131313;
-    --box-bg: #171616e5;
+    --main-bg: #000000;
+    --box-bg: #0e0e0ef8;
+    --nav-bg: #0e0e0ef8;;
     --name-color: #f8f8f8;
+    --header-btnH-color: #b8860b;
     --card-bg-text: #ffffff;
     --shadow-btn: #000000;
   }
