@@ -103,7 +103,7 @@ header nav ul li a {
 header nav ul li a:hover {
   font-size: 1.1em;
 }
-.drop-menu {
+/* .drop-menu {
   position: fixed;
   height: 0%;
   top: 10%;
@@ -121,7 +121,7 @@ header nav ul li a:hover {
 header nav ul li a:hover .drop-menu {
   height: 80%;
   opacity: 1;
-}
+} */
 
 /* End nav style */
 /* Start section-1 style */
@@ -172,6 +172,7 @@ img#section-1-product-img-1 {
   transition: all 0.5s;
   opacity: 1;
   cursor: pointer;
+  /* border: 0.9px solid rgba(23, 23, 23, 0.329); */
 }
 #section-1-product-img-1:hover {
   opacity: 1;
@@ -552,8 +553,8 @@ div.section-4-Description p:first-child {
   top: -1.3px;
   left: -10px;
 }
-.section-5 a:hover{
-  background-color: rgb(67, 67, 67)
+.section-5 a:hover {
+  background-color: rgb(67, 67, 67);
 }
 /* End section-5 style */
 /* End main style */
@@ -589,6 +590,12 @@ div.section-4-Description p:first-child {
   transition: all 1.5s;
   transform: translatey(100%);
 }
+/* animation 5
+.drop-down-nav {
+  opacity: 0;
+  transition: all 1s;
+  transform: translatey(-100%);
+} */
 
 /*Show*/
 .show {
@@ -597,7 +604,7 @@ div.section-4-Description p:first-child {
   transform: translateX(0);
   transform: translatey(0);
 }
-/* animation 5 footer */
+/* animation footer */
 .up-hidden {
   opacity: 0;
   transition: all 1.5s;
