@@ -7,6 +7,13 @@
   list-style: none;
   font-family: Helvetica, Arial, Helvetica, sans-serif;
 }
+html{
+  background-color: var(--main-bg);
+  transition: all 0.5s;
+  color: var(--name-color);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 /* Root */
 :root {
   --page-padding: 0px 8%;
@@ -34,6 +41,32 @@
   align-items: center;
   transition: all 0.5s;
 }
+
+#go-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  font-size: 13px;
+  border: none;
+  z-index: 99;
+  outline: none;
+  background-color: var(--name-color);
+  color: var(--main-bg);
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 10px;
+  transition: all 0.5s;
+}
+
+#go-top:hover {
+  background-color: #d0d0d0;
+}
+#go-top i {
+  position: relative;
+  top: 1.7px;
+}
+
 /* Start header style */
 /* Start nav style */
 html{
