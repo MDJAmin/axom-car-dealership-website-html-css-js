@@ -7,13 +7,6 @@
   list-style: none;
   font-family: Helvetica, Arial, Helvetica, sans-serif;
 }
-html {
-  background-color: var(--main-bg);
-  transition: all 0.5s;
-  color: var(--name-color);
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
 
 /* Root */
 :root {
@@ -37,6 +30,14 @@ html {
   --card-bg-text: #ffffff;
   --shadow-btn: #000000;
 }
+html {
+  background-color: var(--main-bg);
+  transition: all 0.5s;
+  color: var(--name-color);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 /* Black:
 Hex: #000000
 Usage: Backgrounds, text, and accents
@@ -740,13 +741,17 @@ footer {
   justify-content: space-between;
   padding: var(--page-padding);
   height: 300px;
-  box-shadow: 0px -10px 20px -20px black;
+  box-shadow: 0px -10px 20px -20px var(--name-color);
   padding-top: 65px;
   transform: translatey(0%);
 }
 footer .title {
   padding-top: 10px;
   color: var(--header-btnH-color);
+}
+footer .title h2{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2em;
 }
 footer h5 {
   opacity: 0.5;
