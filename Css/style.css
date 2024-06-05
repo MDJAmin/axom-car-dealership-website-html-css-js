@@ -12,6 +12,7 @@
   --page-padding: 0px 8%;
   --main-bg: #f8f8f8;
   --box-bg: #ebebebe8;
+  --nav-bg: rgb(240, 235, 235);
   --name-color: #232323;
   --header-btnH-color: #0b6ab8;
   --card-bg-text: #343434;
@@ -22,6 +23,7 @@
 .dark:root {
   --main-bg: #000000;
   --box-bg: #0e0e0ef8;
+  --nav-bg: #0e0e0ef8;;
   --name-color: #f8f8f8;
   --header-btnH-color: #b8860b;
   --card-bg-text: #ffffff;
@@ -59,6 +61,7 @@ html {
   overflow-x: hidden;
 }
 
+
 #go-top {
   display: none;
   position: fixed;
@@ -87,12 +90,13 @@ html {
 /* Start header style */
 /* Start nav style */
 nav {
-  background-color: var(--box-bg);
+  background-color: var(--nav-bg);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
+  box-shadow: -1px -9px 20px var(--header-btnH-color);
 }
 header nav ul {
   display: flex;
@@ -100,6 +104,19 @@ header nav ul {
   justify-content: space-between;
   height: 90px;
   padding: var(--page-padding);
+}
+li#Logo-brandname{
+  display: flex;
+  gap: 1px;
+  flex-direction: row;
+  align-items: center;
+}
+li#Logo-brandname #Logo{
+width:80px;
+transition: all 0.5s;
+}
+li#Logo-brandname #Logo:hover{
+  scale: 1.1;
 }
 .mode-switch {
   background-color: transparent;
@@ -116,6 +133,8 @@ header nav ul {
 }
 h1 {
   color: var(--header-btnH-color);
+  font-size: 2.2em;
+  font-family: 'Courier New', Courier, monospace;
 }
 a.Search,
 a.Cars {
