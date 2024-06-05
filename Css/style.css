@@ -13,18 +13,44 @@
   --main-bg: #f8f8f8;
   --box-bg: #ebebebe8;
   --name-color: #232323;
+  --header-btnH-color: #0b6ab8;
   --card-bg-text: #343434;
   --shadow: #232323;
   --shadow-btn: #232323;
 }
 
 .dark:root {
-  --main-bg: #131313;
-  --box-bg: #171616e5;
+  --main-bg: #000000;
+  --box-bg: #0e0e0ef8;
   --name-color: #f8f8f8;
+  --header-btnH-color: #b8860b;
   --card-bg-text: #ffffff;
   --shadow-btn: #000000;
 }
+/* Black:
+Hex: #000000
+Usage: Backgrounds, text, and accents
+
+Gold:
+Hex: #FFD700
+Usage: Highlights, buttons, and decorative elements
+
+White:
+Hex: #FFFFFF
+Usage: Backgrounds, text, and areas needing contrast
+
+Dark Gold:
+Hex: #B8860B
+Usage: Hover effects, borders, and subtle accents
+
+Light Gold:
+Hex: #FFF8DC
+Usage: Backgrounds, secondary buttons, and highlights
+
+Gray:
+Hex: #D3D3D3
+Usage: Borders, shadows, and dividers */
+
 html {
   background-color: var(--main-bg);
   transition: all 0.5s;
@@ -79,14 +105,17 @@ header nav ul {
   background-color: transparent;
   border: none;
   padding: 0;
-  color: var(--name-color);
+  color: var(--header-btnH-color);
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.5s;
 }
-h1 {
+.mode-switch:hover{
   color: var(--name-color);
+}
+h1 {
+  color: var(--header-btnH-color);
 }
 a.Search,
 a.Cars {
@@ -100,8 +129,75 @@ header nav ul li a {
   color: var(--name-color) !important;
   transition: all 0.5s;
 }
+
+ul#nav-items a.Home::before {
+  content: "";
+  position: absolute;
+  bottom: 33%;
+  width: 0;
+  height: 1.5px;
+  transition: all 0.5s;
+  background-color: var(--header-btnH-color);
+}
+ul#nav-items a.Home:hover::before {
+  width: 2.6%;
+}
+ul#nav-items a.Car-Shop-1::before {
+  content: "";
+  position: absolute;
+  bottom: 33%;
+  width: 0;
+  height: 1.5px;
+  transition: all 0.5s;
+  background-color: var(--header-btnH-color);
+}
+ul#nav-items a.Car-Shop-1:hover::before {
+  width: 4.6%;
+}
+ul#nav-items a.Car-Shop-2::before {
+  content: "";
+  position: absolute;
+  bottom: 33%;
+  width: 0;
+  height: 1.5px;
+  transition: all 0.5s;
+  background-color: var(--header-btnH-color);
+}
+ul#nav-items a.Car-Shop-2:hover::before {
+  width: 4.6%;
+}
+ul#nav-items a.Search::before {
+  content: "";
+  position: absolute;
+  bottom: 33%;
+  width: 0;
+  height: 1.5px;
+  transition: all 0.5s;
+  background-color: var(--header-btnH-color);
+}
+ul#nav-items a.Search:hover::before {
+  width: 3%;
+}
+ul#nav-items a.Cars::before {
+  content: "";
+  position: absolute;
+  bottom: 33%;
+  width: 0;
+  height: 1.5px;
+  transition: all 0.5s;
+  background-color: var(--header-btnH-color);
+}
+ul#nav-items a.Cars:hover::before {
+  width: 3.5%;
+}
+/* header nav > ul > li > a::before {
+
+} */
+/* header nav ul li a:hover::before {
+  width: 4%;
+} */
 header nav ul li a:hover {
-  font-size: 1.1em;
+  color: var(--header-btnH-color) !important;
 }
 /* .drop-menu {
   position: fixed;
@@ -138,6 +234,7 @@ header .section-1 div.section-1-product-dis {
 header .section-1 div h3 {
   font-size: 3em;
   overflow: hidden;
+  color: var(--header-btnH-color);
 }
 header .section-1 div p {
   margin-top: 35px;
@@ -153,8 +250,8 @@ header .section-1 > div > a {
   transition: all 0.5s;
 }
 header .section-1 > div > a:hover {
-  background-color: var(--name-color);
-  color: var(--main-bg);
+  background-color: var(--header-btnH-color);
+  color: white;
 }
 div.section-1-product-img {
   display: flex;
@@ -370,14 +467,19 @@ img#section-1-product-img-3:hover {
   display: flex;
   flex-direction: column;
   margin-top: 7.8%;
+  color: var(--header-btnH-color);
 }
 .section-2 h3 {
   font-size: 2em;
   margin-bottom: 20px;
   padding: var(--page-padding);
 }
+.section-2 h2 {
+  color: var(--name-color);
+}
 .section-2-product-div {
   display: flex;
+  margin-top: 2%;
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
@@ -419,8 +521,15 @@ img#section-1-product-img-3:hover {
   flex-direction: column;
   gap: 20px;
 }
+.section-3-product-div img {
+  transition: all 0.5s;
+}
+.section-3-product-div img:hover {
+  scale: 1.03;
+}
 .section-3 .section-3-Description-div h3 {
   font-size: 2em;
+  color: var(--header-btnH-color);
 }
 .section-3 .section-3-Description-div div {
   margin-top: 80px;
@@ -435,9 +544,23 @@ img#section-1-product-img-3:hover {
   transition: all 0.5s;
 }
 .section-3 .section-3-Description-div div a:hover {
-  background-color: var(--name-color);
-  color: var(--bg-color);
+  background-color: var(--header-btnH-color);
+  color: white;
 }
+p.price {
+  color: var(--header-btnH-color);
+}
+p.price::after {
+  content: "";
+  position: absolute;
+  left: 1px;
+  bottom: -5px;
+  width: 42px;
+  height: 0.2px;
+  opacity: 0.5;
+  background-color: var(--name-color);
+}
+
 .section-3 .section-3-product-div {
   display: flex;
   gap: 30px;
@@ -463,6 +586,7 @@ img#section-1-product-img-3:hover {
   flex-wrap: wrap;
   gap: 50px;
   margin: 100px 0;
+  margin-left: 80px;
 }
 .section-4 img {
   width: 600px;
@@ -482,10 +606,10 @@ div.img-cards {
   position: absolute;
   bottom: 50px;
   right: 0px;
-  background: var(--main-bg);
+  background: var(--box-bg);
   width: 170px;
   height: 70px;
-  box-shadow: -8px 4px 12px 0px var(--shadow);
+  box-shadow: -4px 3px 7px 0px var(--header-btnH-color);
   border-radius: 5px 0px 0px 5px;
   transition: all 0.5s;
 }
@@ -493,6 +617,7 @@ div.img-cards p {
   margin: 3px 20px;
   font-size: 0.9em;
   cursor: pointer;
+  color: var(--header-btnH-color);
 }
 div.img-cards p:first-child {
   font-size: 0.7em;
@@ -526,9 +651,12 @@ div.section-4-Description p:first-child {
   align-items: center;
   margin: auto;
 }
-.section-5 h3 {
+.section-5 h2 {
   margin: 10px 0px;
-  font-size: 1.8em;
+  font-size: 1.5em;
+}
+.section-5 h2 span {
+  color: var(--header-btnH-color);
 }
 .section-5 input {
   margin: 50px 0px;
@@ -554,7 +682,7 @@ div.section-4-Description p:first-child {
   left: -10px;
 }
 .section-5 a:hover {
-  background-color: rgb(67, 67, 67);
+  background-color: var(--header-btnH-color);
 }
 /* End section-5 style */
 /* End main style */
@@ -614,7 +742,6 @@ div.section-4-Description p:first-child {
   transform: translatey(0%);
   opacity: 1;
 }
-
 /* Start Footer style */
 footer {
   display: flex;
@@ -623,13 +750,17 @@ footer {
   height: 300px;
   box-shadow: 0px -10px 20px -20px black;
   padding-top: 65px;
+  transform: translatey(0%);
 }
 footer .title {
   padding-top: 10px;
+  color: var(--header-btnH-color);
 }
 footer h5 {
   opacity: 0.5;
   font-size: 0.7em;
+  color: var(--header-btnH-color);
+  transition: all 0.5s;
 }
 footer .footer-sec-1,
 .footer-sec-2,
@@ -638,6 +769,16 @@ footer .footer-sec-1,
   flex-direction: column;
   gap: 15px;
   cursor: pointer;
+  transition: all 0.5s;
+}
+footer .footer-sec-1:hover h5 {
+  opacity: 1;
+}
+footer .footer-sec-2:hover h5 {
+  opacity: 1;
+}
+footer .footer-sec-3:hover h5 {
+  opacity: 1;
 }
 .lang {
   cursor: pointer;
@@ -649,17 +790,21 @@ footer .footer-sec-1,
   flex-direction: column;
   transition: all 0.5s;
 }
-.lang:hover .lang-menu {
-  display: inline-block;
-  opacity: 1;
-}
 .lang-menu {
-  margin: 10px;
-  display: none;
   opacity: 0;
-  transition: all 0.5s !important;
+  transition: all 0.2s !important;
 }
-
+.lang-menu p {
+  margin: 10px;
+  transition: all 0.4s;
+}
+.lang-menu p:hover {
+  color: var(--header-btnH-color);
+}
+.Show-lang {
+  display: inline-block;
+  opacity: 0;
+}
 footer a {
   transition: all 0.3s;
 }
@@ -667,9 +812,8 @@ footer a:hover {
   scale: 1.1;
 }
 /* End Footer style */
+
 .under-footer-dis {
   padding: 50px 0px;
   text-align: center;
 }
-
-/* footer hide style */

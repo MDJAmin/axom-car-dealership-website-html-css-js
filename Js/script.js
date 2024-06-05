@@ -142,3 +142,27 @@ const showup = new IntersectionObserver((entries) => {
 });
 const hideup = document.querySelectorAll(".up-hidden");
 hideup.forEach((el) => showup.observe(el));
+
+// let langBtn = document.querySelector(".lang");
+// let langMenu = document.querySelector(".lang-menu");
+
+// langBtn.addEventListener("click", () => {
+//   langMenu.style.opacity = 1;
+//   langMenu.style.display = "block";
+// });
+// langBtn.addEventListener("click", () => {
+//   langMenu.style.opacity = 0;
+//   langMenu.style.display = "none";
+// });
+let langBtn = document.querySelector(".lang");
+let langMenu = document.querySelector(".lang-menu");
+
+langBtn.addEventListener("click", () => {
+  if (langMenu.style.opacity === "0") {
+    langMenu.style.opacity = 1;
+    langMenu.style.display = "block";
+  } else {
+    langMenu.style.opacity = 0;
+    langMenu.style.display = "none";
+  }
+});
