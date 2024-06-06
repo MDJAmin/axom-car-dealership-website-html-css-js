@@ -741,7 +741,7 @@ footer {
   justify-content: space-between;
   padding: var(--page-padding);
   height: 300px;
-  box-shadow: 0px -10px 20px -20px var(--name-color);
+  box-shadow: 0px -10px 20px -20px var(--header-btnH-color);
   padding-top: 65px;
   transform: translatey(0%);
 }

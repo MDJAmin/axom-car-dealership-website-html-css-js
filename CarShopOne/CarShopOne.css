@@ -7,7 +7,7 @@
   list-style: none;
   font-family: Helvetica, Arial, Helvetica, sans-serif;
 }
-html{
+html {
   background-color: var(--main-bg);
   transition: all 0.2s;
   color: var(--name-color);
@@ -30,7 +30,7 @@ html{
 .dark:root {
   --main-bg: #000000;
   --box-bg: #0e0e0ef8;
-  --nav-bg: #0e0e0ef8;;
+  --nav-bg: #0e0e0ef8;
   --name-color: #f8f8f8;
   --header-btnH-color: #b8860b;
   --card-bg-text: #ffffff;
@@ -91,24 +91,23 @@ header nav div.nav-title i {
   font-size: 1.6em;
   margin-right: 5px;
 }
-header nav div.nav-title h2{
+header nav div.nav-title h2 {
   color: var(--header-btnH-color);
 }
 header nav div.nav-iteams {
   display: flex;
   gap: 30px;
-
 }
-header nav div.nav-iteams div:first-child{
-display: flex;
-gap: 30px;
-margin-top: 10px;
+header nav div.nav-iteams div:first-child {
+  display: flex;
+  gap: 30px;
+  margin-top: 10px;
 }
 header nav div.nav-iteams a {
   color: var(--name-color);
   transition: all 0.3s;
 }
-header nav div.nav-iteams a:hover{
+header nav div.nav-iteams a:hover {
   color: var(--header-btnH-color);
 }
 input {
@@ -133,18 +132,18 @@ div.nav-inp a {
   left: -10px;
   transition: all 0.5s;
 }
-div.nav-inp a:hover{
+div.nav-inp a:hover {
   background-color: var(--header-btnH-color);
 }
 /* End nav style */
 
-header div.header-bg{
+header div.header-bg {
   position: relative;
 }
-header div.header-bg img{
-width: 100%;
+header div.header-bg img {
+  width: 100%;
 }
-header div.header-bg a{
+header div.header-bg a {
   position: absolute;
   bottom: 10%;
   left: 3%;
@@ -154,7 +153,7 @@ header div.header-bg a{
   padding: 12.1px 30px;
   font-size: 0.9em;
 }
-header div.header-bg a:hover{
+header div.header-bg a:hover {
   background-color: var(--header-btnH-color);
   color: white !important;
   scale: 1.1;
@@ -162,6 +161,66 @@ header div.header-bg a:hover{
 /* End header style */
 
 /* Start main style */
+/* Start section-1 style */
+.section-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7%;
+  padding: var(--page-padding);
+  margin-top: 8%;
+}
+.section-1 .section-1-title-cards {
+  margin: 5% 0px;
+}
+.section-1 .section-1-product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 200px;
+}
+.section-1 .section-1-product-cards img {
+  width: 380px;
+}
+/* End section-1 style */
+
+/* Start section-2 style */
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: var(--page-padding);
+}
+.section-2 h4 {
+  margin: 25px 0;
+}
+.section-2 .section-2-product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.section-2 .section-2-product-cards img {
+  width: 450px;
+}
+
+/* End section-2 style */
+
+/* Start section-3 style */
+
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: var(--page-padding);
+}
+.section-3 .section-3-product-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.section-3 .section-3-product-cards div {
+  text-align: center;
+}
+
+/* End section-3 style */
 
 /* End main style */
 
