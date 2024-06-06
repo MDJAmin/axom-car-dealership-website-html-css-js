@@ -13,15 +13,15 @@
 <body>
     <button onclick="topFunction()" id="go-top" title="Go to top" class="animate__animated animate__rubberBand">Top <i
             class='bx bxs-to-top'></i> </button>
-    <header class="animate__animated animate__fadeIn">
-        <nav>
+    <header class=" animate__animated animate__fadeInDown">
+        <nav> 
             <div class="nav-title">
                 <i class='bx bxs-car'></i>
                 <h2>Car Store</h2>
             </div>
             <div>
-                <div class="nav-iteams">
-                    <div>
+                <div class="nav-items">
+                    <div class="nav-item-link">
                         <a href="../index.html">Home</a>
                         <a href="#">Cars for Sale</a>
                         <a href="#">Sell Your Car</a>
@@ -46,11 +46,12 @@
         </div>
     </header>
     <main>
-        <section class="section-1">
+        <section class="section-1 animate__animated animate__fadeInUp" >
             <div class="section-1-title-cards">
                 <h3>Car Search/Filter</h3>
                 <p>Filters</p>
-                <a class="Make-menu" href="#">Make <i class='bx bx-chevron-down'></i></a>
+                <a class="Make-menu" href="#">Make <i class='bx bx-chevron-down'></i>
+                </a>
                 <a href="#" class="btn">Apply Filters</a>
             </div>
             <div class="section-1-product-cards">
@@ -58,7 +59,7 @@
                     <img src="../Assets/Product/Page 2/Section-2/Image (12).jpeg" alt="Product img">
                     <div>
                         <h5>Car Make - Model</h5>
-                        <p>$XX,XXX</p>
+                        <p>$30,000</p>
                         <a href="#">View Details</a>
                     </div>
                 </div>
@@ -66,28 +67,28 @@
                     <img src="../Assets/Product/Page 2/Section-2/Image (11).jpeg" alt="Product img">
                     <div>
                         <h5>Car Make - Model</h5>
-                        <p>$XX,XXX</p>
+                        <p>$69,000</p>
                         <a href="#">View Details</a>
                     </div>
                 </div>
             </div>
         </section>
         <section class="section-2">
-            <h4>Featured Cars</h4>
+            <h4 class="hiddenCardsOne">Featured Cars</h4>
             <div class="section-2-product-cards">
-                <div class="section-2-product-cards-one">
+                <div class="section-2-product-cards-one hiddenCardsOne">
                     <img src="../Assets/Product/Page 2/Section-3/Image (13).jpeg" alt="Product img">
                     <h5>Car Make - Model</h5>
                     <p>$XX,XXX</p>
                     <a href="#">View Details</a>
                 </div>
-                <div class="section-2-product-cards-two">
+                <div class="section-2-product-cards-two hiddenCardsOne">
                     <img src="../Assets/Product/Page 2/Section-3/Image (14).jpeg" alt="Product img">
                     <h5>Car Make - Model</h5>
                     <p>$XX,XXX</p>
                     <a href="#">View Details</a>
                 </div>
-                <div class="section-2-product-cards-three">
+                <div class="section-2-product-cards-three hiddenCardsOne">
                     <img src="../Assets/Product/Page 2/Section-3/Image.jpeg" alt="Product img">
                     <h5>Car Make - Model</h5>
                     <p>$XX,XXX</p>
@@ -96,23 +97,23 @@
             </div>
         </section>
         <section class="section-3">
-            <h3>
+            <h3 class="hiddenCardsTwo">
                 Customer Reviews
             </h3>
             <div class="section-3-product-cards">
-                <div class="section-3-broduct-cards-one">
+                <div class="section-3-broduct-cards-one hiddenCardsTwo">
                     <img src="../Assets/Product/Page 2/Section-4/Image.jpeg" alt="Customer img">
-                    <h5>Customer Name</h5>
+                    <h5>Fariborz</h5>
                     <p>"Great experience buying my car from here! Highly <br>recommend."</p>
                     <i class='bx bxs-star'></i>
                     <i class='bx bxs-star'></i>
                     <i class='bx bxs-star'></i>
                     <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star' style="color: rgba(240, 248, 255, 0.511);"></i>
                 </div>
-                <div class="section-3-broduct-cards-two">
+                <div class="section-3-broduct-cards-two hiddenCardsTwo">
                     <img src="../Assets/Product/Page 2/Section-4/Image (15).jpeg" alt="Customer img">
-                    <h5>Customer Name</h5>
+                    <h5>Hesam</h5>
                     <p>"Found the perfect car for my needs. Thank you!"</p>
                     <i class='bx bxs-star'></i>
                     <i class='bx bxs-star'></i>
@@ -120,9 +121,9 @@
                     <i class='bx bxs-star'></i>
                     <i class='bx bxs-star'></i>
                 </div>
-                <div class="section-3-broduct-cards-three">
+                <div class="section-3-broduct-cards-three hiddenCardsTwo">
                     <img src="../Assets/Product/Page 2/Section-4/Image (1).jpeg" alt="Customer img">
-                    <h5>Customer Name</h5>
+                    <h5>Amir</h5>
                     <p>"Smooth process from browsing to purchasing. Very <br>satisfied!"</p>
                     <i class='bx bxs-star'></i>
                     <i class='bx bxs-star'></i>
@@ -134,8 +135,8 @@
         </section>
     </main>
 
-    <footer>
-        <div id="footer-iteams">
+    <footer class="up-hidden">
+        <div id="footer-items">
             <ul>
                 <li>Privacy Policy</li>
                 <li>Terms of Service</li>

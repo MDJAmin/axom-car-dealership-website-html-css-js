@@ -101,6 +101,10 @@ li#Logo-brandname #Logo:hover{
   justify-content: center;
   align-items: center;
   transition: all 0.5s;
+  cursor: pointer;
+}
+.mode-switch:hover{
+  color: var(--name-color);
 }
 .mode-switch:hover{
   color: var(--name-color);
@@ -680,7 +684,7 @@ div.section-4-Description p:first-child {
 /* End section-5 style */
 /* End main style */
 
-/* style for hidden iteams*/
+/* animation for hidden iteams*/
 /* animation 1 */
 .hidden {
   opacity: 0;
