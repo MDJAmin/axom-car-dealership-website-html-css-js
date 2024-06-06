@@ -27,8 +27,8 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (
-    document.body.scrollTop > 2000 ||
-    document.documentElement.scrollTop > 2000
+    document.body.scrollTop > 800 ||
+    document.documentElement.scrollTop > 800
   ) {
     Topbutton.style.display = "block";
   } else {

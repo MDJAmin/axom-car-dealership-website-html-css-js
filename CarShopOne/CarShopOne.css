@@ -170,7 +170,7 @@ header div.header-bg a:hover {
   gap: 3%;
   padding: 0 7%;
   margin-top: 8%;
-  margin-bottom: 10%;
+  margin-bottom: 4%;
 }
 .section-1 .section-1-title-cards {
   margin: 5% 0px;
@@ -186,6 +186,7 @@ margin-top: 30px;
 }
 .section-1 .section-1-product-cards > div{
   box-shadow:1px 1px 3px var(--Box-shadow);
+  border: solid 0.1px rgba(255, 255, 255, 0.366);
   width: 540px;
   height: 395px;
   border-radius: 10px;
@@ -248,9 +249,11 @@ margin-bottom: 15px;
   flex-direction: column;
   flex-wrap: wrap;
   padding: var(--page-padding);
+  margin-bottom: 4%;
 }
 .section-2 h4 {
   margin: 25px 0;
+  font-size: 1.5em;
 }
 .section-2 .section-2-product-cards {
   display: flex;
@@ -259,6 +262,29 @@ margin-bottom: 15px;
 }
 .section-2 .section-2-product-cards img {
   width: 450px;
+  border-radius: 20px;
+}
+.section-2-product-cards h5{
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+.section-2-product-cards p{
+  margin: 10px 0;
+  margin-bottom: 20px;
+}
+.section-2-product-cards a {
+  font-size: 1em;
+  border: 0;
+  padding: 10px 25px;
+  box-shadow: 1px 0px 1px;
+  border: 1px solid var(--name-color);
+  margin-right: 10px;
+  transition: all 0.5s;
+  color: var(--name-color)
+}
+.section-2-product-cards a:hover{
+  color: white;
+  background-color: var(--header-btnH-color);
 }
 
 /* End section-2 style */
@@ -273,19 +299,33 @@ margin-bottom: 15px;
   margin: 30px;
 }
 .section-3 h3{
-  margin: 4% 0;
+  margin: 2% 0;
 }
 .section-3 .section-3-product-cards {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 5px;
 }
-.section-3 .section-3-product-cards div {
+.section-3 .section-3-product-cards > div {
   text-align: center;
+  box-shadow:1px 1px 3px var(--Box-shadow);
+  border: solid 0.1px rgba(255, 255, 255, 0.366);
+  /* height: 300px; */
+  width: 430px;
 }
-
+.section-3 .section-3-product-cards > div p{
+  margin: 10px 0;
+}
+.section-3 .section-3-product-cards > div > img{
+  padding: 20px 0 10px 0;
+  border-radius: 50%;
+}
+.section-3 .section-3-product-cards > div > i{
+  padding-bottom: 20px;
+  color: #b8860b;
+}
 /* End section-3 style */
-
 /* End main style */
 
 /* Start Footer style */
