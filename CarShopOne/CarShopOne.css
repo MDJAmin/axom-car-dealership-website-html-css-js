@@ -23,7 +23,8 @@ html {
   --name-color: #232323;
   --header-btnH-color: #0b6ab8;
   --card-bg-text: #343434;
-  --shadow: #232323;
+  --shadow: black;
+  --Box-shadow: #2323239f;
   --shadow-btn: #232323;
 }
 
@@ -34,6 +35,7 @@ html {
   --name-color: #f8f8f8;
   --header-btnH-color: #b8860b;
   --card-bg-text: #ffffff;
+  --Box-shadow: #ffffffa8;
   --shadow-btn: #000000;
 }
 .mode-switch {
@@ -165,20 +167,78 @@ header div.header-bg a:hover {
 .section-1 {
   display: flex;
   flex-wrap: wrap;
-  gap: 7%;
-  padding: var(--page-padding);
+  gap: 3%;
+  padding: 0 7%;
   margin-top: 8%;
+  margin-bottom: 10%;
 }
 .section-1 .section-1-title-cards {
   margin: 5% 0px;
 }
+.section-1 .section-1-title-cards p {
+margin-bottom: 15px;
+margin-top: 30px;
+}
 .section-1 .section-1-product-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 200px;
+  gap: 30px;
+}
+.section-1 .section-1-product-cards > div{
+  box-shadow:1px 1px 3px var(--Box-shadow);
+  width: 540px;
+  height: 395px;
+  border-radius: 10px;
+}
+.section-1 .section-1-product-cards > div > div {
+  margin: 0px 25px;
+  margin-bottom: 20px;
 }
 .section-1 .section-1-product-cards img {
   width: 380px;
+  border-radius: 25px;
+  margin: 20px;
+}
+.section-1-title-cards a.btn {
+  color: var(--main-bg);
+  background-color: var(--name-color);
+  padding: 10px 30px;
+  font-size: 0.9em;
+  transition: all 0.5s;
+}
+.section-1-title-cards a.btn:hover {
+  color: white;
+  background-color: var(--header-btnH-color);
+}
+a.Make-menu {
+  font-size: 1em;
+  border: 0;
+  padding: 10px;
+  box-shadow: 1px 0px 1px;
+  border: 1px solid var(--name-color);
+  margin-right: 10px;
+  transition: all 0.5s;
+  color: var(--name-color)
+}
+a.Make-menu:hover{
+  color: white;
+  background-color: var(--header-btnH-color);
+}
+
+.section-1-product-cards p{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+margin-bottom: 15px;
+}
+.section-1-product-cards a{
+  color: var(--main-bg);
+  background-color: var(--name-color);
+  padding: 10px 30px;
+  font-size: 0.9em;
+  transition: all 0.5s;
+}
+.section-1-product-cards a:hover {
+  color: white;
+  background-color: var(--header-btnH-color);
 }
 /* End section-1 style */
 
@@ -210,6 +270,10 @@ header div.header-bg a:hover {
   flex-direction: column;
   flex-wrap: wrap;
   padding: var(--page-padding);
+  margin: 30px;
+}
+.section-3 h3{
+  margin: 4% 0;
 }
 .section-3 .section-3-product-cards {
   display: flex;
