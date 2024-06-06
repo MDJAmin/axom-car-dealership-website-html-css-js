@@ -361,6 +361,7 @@ a.Make-menu:hover {
 }
 .section-3 .section-3-product-cards > div:hover{
   background-color: var(--header-Card-color);
+  scale: 1.05;
 }
 .section-3 .section-3-product-cards > div:hover img {
   scale: 1.1;
