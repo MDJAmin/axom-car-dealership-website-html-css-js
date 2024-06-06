@@ -21,7 +21,7 @@ html {
   --box-bg: #ebebebe8;
   --nav-bg: rgb(240, 235, 235);
   --name-color: #232323;
-  --header-btnH-color: #0b6ab8;
+  --header-btnH-color: #0e7edbf0;
   --card-bg-text: #343434;
   --shadow: black;
   --Box-shadow: #2323239f;
@@ -169,23 +169,23 @@ header div.header-bg a:hover {
   flex-wrap: wrap;
   gap: 3%;
   padding: 0 7%;
-  margin-top: 8%;
+  margin-top: 5%;
   margin-bottom: 4%;
 }
 .section-1 .section-1-title-cards {
   margin: 5% 0px;
 }
 .section-1 .section-1-title-cards p {
-margin-bottom: 15px;
-margin-top: 30px;
+  margin-bottom: 15px;
+  margin-top: 30px;
 }
 .section-1 .section-1-product-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-.section-1 .section-1-product-cards > div{
-  box-shadow:1px 1px 3px var(--Box-shadow);
+.section-1 .section-1-product-cards > div {
+  box-shadow: 1px 1px 3px var(--Box-shadow);
   border: solid 0.1px rgba(255, 255, 255, 0.366);
   width: 540px;
   height: 395px;
@@ -219,18 +219,18 @@ a.Make-menu {
   border: 1px solid var(--name-color);
   margin-right: 10px;
   transition: all 0.5s;
-  color: var(--name-color)
+  color: var(--name-color);
 }
-a.Make-menu:hover{
+a.Make-menu:hover {
   color: white;
   background-color: var(--header-btnH-color);
 }
 
-.section-1-product-cards p{
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-margin-bottom: 15px;
+.section-1-product-cards p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 15px;
 }
-.section-1-product-cards a{
+.section-1-product-cards a {
   color: var(--main-bg);
   background-color: var(--name-color);
   padding: 10px 30px;
@@ -264,11 +264,11 @@ margin-bottom: 15px;
   width: 450px;
   border-radius: 20px;
 }
-.section-2-product-cards h5{
+.section-2-product-cards h5 {
   font-size: 1.1em;
   margin-top: 10px;
 }
-.section-2-product-cards p{
+.section-2-product-cards p {
   margin: 10px 0;
   margin-bottom: 20px;
 }
@@ -280,9 +280,9 @@ margin-bottom: 15px;
   border: 1px solid var(--name-color);
   margin-right: 10px;
   transition: all 0.5s;
-  color: var(--name-color)
+  color: var(--name-color);
 }
-.section-2-product-cards a:hover{
+.section-2-product-cards a:hover {
   color: white;
   background-color: var(--header-btnH-color);
 }
@@ -296,9 +296,9 @@ margin-bottom: 15px;
   flex-direction: column;
   flex-wrap: wrap;
   padding: var(--page-padding);
-  margin: 30px;
+  margin: 80px 0;
 }
-.section-3 h3{
+.section-3 h3 {
   margin: 2% 0;
 }
 .section-3 .section-3-product-cards {
@@ -309,19 +309,19 @@ margin-bottom: 15px;
 }
 .section-3 .section-3-product-cards > div {
   text-align: center;
-  box-shadow:1px 1px 3px var(--Box-shadow);
+  box-shadow: 1px 1px 3px var(--Box-shadow);
   border: solid 0.1px rgba(255, 255, 255, 0.366);
   /* height: 300px; */
   width: 430px;
 }
-.section-3 .section-3-product-cards > div p{
+.section-3 .section-3-product-cards > div p {
   margin: 10px 0;
 }
-.section-3 .section-3-product-cards > div > img{
+.section-3 .section-3-product-cards > div > img {
   padding: 20px 0 10px 0;
   border-radius: 50%;
 }
-.section-3 .section-3-product-cards > div > i{
+.section-3 .section-3-product-cards > div > i {
   padding-bottom: 20px;
   color: #b8860b;
 }
@@ -329,5 +329,62 @@ margin-bottom: 15px;
 /* End main style */
 
 /* Start Footer style */
-
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  padding: 50px 5%;
+  box-shadow: 0px -10px 20px -20px var(--name-color);
+}
+footer div#footer-iteams ul {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 40px;
+}
+footer div#footer-iteams ul li {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+footer div#footer-iteams ul li:hover {
+  color: var(--header-btnH-color);
+}
+footer div#footer-iteams p {
+  padding-bottom: 15px;
+}
+footer div#footer-socalmedia {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+footer div#footer-socalmedia i {
+  font-size: 2em;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+footer div#footer-socalmedia i.bxl-facebook-circle:hover {
+  color: rgb(30, 34, 137);
+}
+footer div#footer-socalmedia i.bxl-twitter:hover {
+  color: rgb(4, 127, 242);
+}
+footer div#footer-socalmedia i.bxl-instagram:hover {
+  color: rgb(200, 16, 197);
+}
+footer div#footer-iteams a {
+  font-size: 1em;
+  border: 0;
+  padding: 9.5px 25px;
+  padding-bottom: 9.7px;
+  box-shadow: 1px 0px 1px;
+  border: 1px solid var(--name-color);
+  margin-right: 10px;
+  transition: all 0.5s;
+  color: var(--name-color);
+  position: relative;
+  right: 6px;
+}
+footer div#footer-iteams a:hover {
+  color: white;
+  background-color: var(--header-btnH-color);
+}
 /* End Footer style */
