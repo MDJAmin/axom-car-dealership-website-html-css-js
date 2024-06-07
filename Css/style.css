@@ -86,6 +86,7 @@ li#Logo-brandname{
   align-items: center;
 }
 li#Logo-brandname #Logo{
+  cursor: pointer;
 width:80px;
 transition: all 0.5s;
 }

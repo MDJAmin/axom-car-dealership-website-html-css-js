@@ -103,12 +103,17 @@ nav .nav-header-items {
 }
 nav .nav-header-items h1 {
   color: var(--header-btnH-color);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2em;
 }
-nav .nav-header-items i {
-  font-size: 1.6em;
-  margin-bottom: 4px;
-  color: var(--name-color);
-}
+#Logo{
+  width:80px;
+  transition: all 0.5s;
+  cursor: pointer;
+  }
+ #Logo:hover{
+    scale: 1.1;
+  }
 nav .nav-items {
   display: flex;
   align-items: center;
