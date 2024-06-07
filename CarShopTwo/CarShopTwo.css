@@ -10,6 +10,7 @@
 html {
   overflow: hidden;
   transition: all 0.4s;
+  background-color: var(--main-bg);
 }
 /* Root */
 :root {
@@ -121,6 +122,27 @@ nav .nav-items a {
 
 /* Start header style */
 
+.header-items{
+  position: relative;
+}
+header .header-items img{
+width: 100%;
+}
+header .header-items a{
+  position: absolute;
+  bottom: 40px;
+  left: 60px;
+  color: white !important;
+  background-color: var(--shadow);
+  border: 1px solid var(--name-color);
+  padding: 10px 30px;
+  font-size: 0.9em;
+  transition: all 0.5s;
+}
+header .header-items a:hover{
+  background-color: var(--header-btnH-color);
+  scale: 1.1;
+}
 /* End header style */
 
 /* Start main style */
