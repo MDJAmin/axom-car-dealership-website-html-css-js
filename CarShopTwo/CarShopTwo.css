@@ -11,6 +11,7 @@ html {
   transition: all 0.4s;
   scroll-behavior: smooth;
   background-color: var(--main-bg);
+  overflow-x: hidden;
   /* background-color: var(--body-color); */
 }
 
@@ -194,6 +195,12 @@ header .header-items a:hover {
   height: 210px;
   border-radius: 15px;
   box-shadow: 1px 1px 3px var(--Box-shadow);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.section-1 div.car-models > div:hover{
+  box-shadow: 1px 3px 3px var(--header-btnH-color);
+  scale: 1.1;
 }
 .section-1 div.car-models > div a {
   text-align: center;
@@ -221,7 +228,6 @@ header .header-items a:hover {
 }
 
 /* Start section-2 style */
-
 .section-2 {
   display: flex;
   flex-direction: column;
@@ -240,7 +246,6 @@ header .header-items a:hover {
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  transition: all 0.5s;
 }
 .section-2 > div > div.slider {
   position: relative;
@@ -252,28 +257,31 @@ header .header-items a:hover {
   border-radius: 15px;
   transition: all 0.5s;
   top: -30px;
+  transition: all 0.5s;
+}
+.section-2 > div > div.slider:hover img{
+  border-radius: 0;
 }
 .section-2 > div > div img {
   padding: 30px 0;
+  transition: all 0.4s;
   padding-bottom: 15px;
   width: 200px;
   border-radius: 50%;
-  transition: all 0.5s;
   user-select: none;
 }
 .section-2 > div > div h6 {
   font-size: 1.2em;
-  transition: all 0.5s;
   user-select: none;
 }
 .section-2 > div > div.slider p {
   padding: 10px 0;
-  transition: all 0.5s;
   color: #000000 !important;
   user-select: none;
 }
 .hide-slider-item {
   display: none;
+  transition: all 0.5s;
   opacity: 0;
 }
 div.slider-container {
@@ -358,6 +366,7 @@ div.slider-container {
   font-size: 0.9em;
   font-style: italic;
 }
+
 /* End section-2 style */
 
 /* Start section-3 style */
@@ -385,6 +394,13 @@ div.product-cards > div {
   box-shadow: 1px 1px 3px var(--Box-shadow);
   height: 460px;
   border-radius: 15px;
+  transition: all 0.4s;
+}
+div.product-cards > div:hover{
+  background-color: var(--header-Card-color);
+}
+div.product-cards > div:hover img{
+  border-radius: 0;
 }
 section.section-3 .product-cards h6 {
   opacity: 0.8;
@@ -402,6 +418,7 @@ section.section-3 .product-cards p.price {
 }
 section.section-3 .product-cards img {
   width: 444px;
+  transition: all 0.5s;
   user-select: none;
   border-radius: 50px;
   padding: 20px 20px;
@@ -495,8 +512,12 @@ li.footer-section-1 ul {
 }
 li.footer-section-1 ul a {
   color: var(--name-color);
+  transition: all 0.3s;
   padding: 5px 0;
   opacity: 0.9;
+}
+li.footer-section-1 ul a:hover{
+  color: var(--header-btnH-color);
 }
 li.footer-section-1 ul h6 {
   color: var(--name-color);
@@ -555,6 +576,16 @@ footer div.Top-btn a {
   justify-content: center;
   background-color: var(--name-color);
 }
+footer div.Top-btn a:hover{
+  background-color: var(--header-btnH-color);
+  color: white;
+}
+footer a{
+  transition: all 0.3s;
+}
+footer a:hover{
+  color: var(--header-btnH-color);
+}
 /* End Footer style */
 
 /* animation for hidden iteams*/
@@ -579,6 +610,11 @@ footer div.Top-btn a {
 .hiddenCardsTwo {
   opacity: 0;
   transition: all 1.5s;
+  transform: translateX(-100%);
+}
+.hiddenCardsThree-p {
+  opacity: 0;
+  transition: all 2s;
   transform: translateX(-100%);
 }
 

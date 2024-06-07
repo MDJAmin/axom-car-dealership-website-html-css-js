@@ -129,6 +129,8 @@ const hiddeninp = document.querySelectorAll(".up-hidden-input");
 hiddeninp.forEach((el) => observer.observe(el));
 // const hiddenNav = document.querySelectorAll(".drop-down-nav");
 // hiddenNav.forEach((el) => observer.observe(el));
+const hiddenCardsThree = document.querySelectorAll(".hiddenCardsThree-p");
+hiddenCardsThree.forEach((el) => observer.observe(el));
 
 const showup = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {

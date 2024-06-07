@@ -1,3 +1,30 @@
+// "use strict";
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const items = document.querySelectorAll(".slider-item");
+//   const leftArrow = document.getElementById("left-arrow");
+//   const rightArrow = document.getElementById("right-arrow");
+//   let currentIndex = 0;
+
+//   function showItem(index) {
+//     items.forEach((item, i) => {
+//       item.classList.toggle("active", i === index);
+//     });
+//   }
+
+//   rightArrow.addEventListener("click", () => {
+//     currentIndex = (currentIndex + 1) % items.length;
+//     showItem(currentIndex);
+//   });
+
+//   leftArrow.addEventListener("click", () => {
+//     currentIndex = (currentIndex - 1 + items.length) % items.length;
+//     showItem(currentIndex);
+//   });
+
+//   showItem(currentIndex);
+// });
+
 "use strict";
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -12,18 +39,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  rightArrow.addEventListener("click", () => {
+  function nextItem() {
     currentIndex = (currentIndex + 1) % items.length;
     showItem(currentIndex);
-  });
+  }
 
-  leftArrow.addEventListener("click", () => {
+  function previousItem() {
     currentIndex = (currentIndex - 1 + items.length) % items.length;
     showItem(currentIndex);
-  });
+  }
+
+  rightArrow.addEventListener("click", nextItem);
+  leftArrow.addEventListener("click", previousItem);
+
+  setInterval(nextItem, 15000);
 
   showItem(currentIndex);
 });
+
 
 // document.addEventListener('DOMContentLoaded', function () {
 //     const sliderContainer = document.querySelector('.slider');
