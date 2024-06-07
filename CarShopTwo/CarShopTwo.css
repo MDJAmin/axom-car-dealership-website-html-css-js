@@ -8,7 +8,6 @@
   font-family: Helvetica, Arial, Helvetica, sans-serif;
 }
 html {
-  overflow: hidden;
   transition: all 0.4s;
   background-color: var(--main-bg);
 }
@@ -85,6 +84,12 @@ nav {
   height: 90px;
   width: 100%;
   background-color: var(--nav-bg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  box-shadow: -1px -9px 20px var(--header-btnH-color);
 }
 nav .nav-header-items {
   display: flex;
@@ -122,13 +127,13 @@ nav .nav-items a {
 
 /* Start header style */
 
-.header-items{
+.header-items {
   position: relative;
 }
-header .header-items img{
-width: 100%;
+header .header-items img {
+  width: 100%;
 }
-header .header-items a{
+header .header-items a {
   position: absolute;
   bottom: 40px;
   left: 60px;
@@ -139,14 +144,85 @@ header .header-items a{
   font-size: 0.9em;
   transition: all 0.5s;
 }
-header .header-items a:hover{
+header .header-items a:hover {
   background-color: var(--header-btnH-color);
   scale: 1.1;
 }
 /* End header style */
 
 /* Start main style */
+.section-1 {
+  margin-bottom: 100%;
+}
+.section-1 .Search-section {
+  text-align: center;
+}
+.section-1 .Search-section input {
+  margin: 50px 0px;
+  font-size: 1.1em;
+  border: 0;
 
+  padding: 10px;
+  padding-right: 200px;
+  box-shadow: 1px 0px 1px;
+  outline: none;
+}
+.section-1 .Search-section a {
+  color: white;
+  background-color: var(--shadow);
+  border-right: 1px solid var(--name-color);
+  border-top: 1px solid var(--name-color);
+  border-bottom: 1px solid var(--name-color);
+  padding: 12.5px 45px;
+  font-size: 0.8em;
+  transition: all 0.5s;
+  position: relative;
+  top: -1.3px;
+  left: -10px;
+}
+.section-1 .Search-section a:hover {
+  background-color: var(--header-btnH-color);
+}
+.section-1 div.car-models {
+  padding: var(--page-padding);
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.section-1 div.car-models > div {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  flex-wrap: wrap;
+  width: 350px;
+  height: 210px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 3px var(--Box-shadow);
+}
+.section-1 div.car-models > div a {
+  text-align: center;
+ color: black;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.3em;
+}
+.section-1 div.car-models div img.Sedans {
+  margin: auto;
+  width: 70px;
+}
+.section-1 div.car-models div img.Trucks {
+  margin: auto;
+  width: 70px;
+}
+.section-1 div.car-models div img.SUV {
+  margin: auto;
+  width: 90px;
+}
+.section-1 div.car-models div img.Electric {
+  margin: auto;
+  width: 60px;
+}
 /* End main style */
 
 /* Start Footer style */
