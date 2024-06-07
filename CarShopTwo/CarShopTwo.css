@@ -185,15 +185,15 @@ header .header-items a:hover {
 .section-1 div.car-models {
   padding: var(--page-padding);
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 50px;
+  gap: 10px;
 }
 .section-1 div.car-models > div {
   display: flex;
   flex-direction: column;
   background-color: white;
-  flex-wrap: wrap;
-  width: 350px;
+  width: 300px;
   height: 210px;
   border-radius: 15px;
   box-shadow: 1px 1px 3px var(--Box-shadow);
@@ -230,37 +230,136 @@ header .header-items a:hover {
   flex-direction: column;
   padding: var(--page-padding);
   margin-top: 50px;
-
 }
 .section-2 h4 {
   font-size: 1.7em;
   margin-bottom: 30px;
   color: var(--name-color);
 }
+.section-2 p {
+  color: var(--name-color);
+}
 .section-2 > div {
   display: flex;
   justify-content: space-between;
   gap: 30px;
+  transition: all 0.5s;
 }
-.section-2 > div > div {
+.section-2 > div > div.slider {
+  position: relative;
   background-color: white;
   box-shadow: 1px 1px 3px var(--Box-shadow);
   width: 450px;
-  height: 330px;
+  height: 350px;
   text-align: center;
   border-radius: 15px;
+  transition: all 0.5s;
+  top: -30px;
 }
 .section-2 > div > div img {
   padding: 30px 0;
   padding-bottom: 15px;
   width: 200px;
   border-radius: 50%;
+  transition: all 0.5s;
+  user-select: none;
 }
 .section-2 > div > div h6 {
-font-size: 1.2em;
+  font-size: 1.2em;
+  transition: all 0.5s;
+  user-select: none;
 }
-.section-2 > div > div p {
+.section-2 > div > div.slider p {
   padding: 10px 0;
+  transition: all 0.5s;
+  color: #000000 !important;
+  user-select: none;
+}
+.hide-slider-item {
+  display: none;
+  opacity: 0;
+}
+div.slider-container {
+  position: relative;
+}
+.section-2 svg.arrow {
+  cursor: pointer;
+  padding: 5px;
+  color: var(--name-color);
+  background-color: var(--main-bg);
+  width: 50px;
+  height: 45px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 3px var(--Box-shadow);
+  transition: all 0.5s;
+}
+#left-arrow {
+  position: absolute;
+  left: 69%;
+  bottom: 37px;
+  padding: 0 5px 0 0px;
+}
+#right-arrow {
+  position: absolute;
+  right: 0.5%;
+  bottom: 37px;
+  padding: 0 0 0 5px;
+}
+
+.section-2 #right-arrow:hover {
+  color: white;
+  background-color: var(--header-btnH-color);
+}
+
+.section-2 #left-arrow:hover {
+  color: white;
+  background-color: var(--header-btnH-color);
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slider {
+  display: flex;
+  overflow: hidden;
+  width: 450px;
+}
+
+.slider-item {
+  display: none;
+  opacity: 0;
+  transition: all 0.5s;
+  width: 100%;
+  text-align: center;
+}
+
+.slider-item.active {
+  display: block;
+  opacity: 1;
+}
+.section-2 > div > div.Description {
+  background-color: rgba(255, 255, 255, 0) !important;
+  box-shadow: 0px 0px 0px var(--Box-shadow) !important;
+  width: 950px;
+  min-height: 330px;
+  border-radius: 15px;
+  text-align: start;
+}
+.section-2 > div > div.Description p {
+  font-size: 1.3em;
+  padding: 7px 0;
+}
+.section-2 > div > div.Description p.Introduction span{
+font-style: oblique;
+border-bottom: 1px solid;
+}
+.section-2 > div > div.Description p.date{
+  opacity: 0.6;
+  font-size: 0.9em;
+  font-style: italic;
 }
 /* End section-2 style */
 
