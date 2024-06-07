@@ -11,8 +11,10 @@ html {
   transition: all 0.4s;
   scroll-behavior: smooth;
   background-color: var(--main-bg);
+  /* background-color: var(--body-color); */
 }
 /* Root */
+
 :root {
   --page-padding: 0px 8%;
   --main-bg: #f8f8f8;
@@ -25,6 +27,7 @@ html {
   --shadow: black;
   --Box-shadow: #2323239f;
   --shadow-btn: #232323;
+  /* --body-color: linear-gradient(135deg, blue, white); */
 }
 
 .dark:root {
@@ -37,6 +40,7 @@ html {
   --card-bg-text: #ffffff;
   --Box-shadow: #ffffffa8;
   --shadow-btn: #000000;
+  /* --body-color: linear-gradient(135deg, black, rgb(194, 165, 0)); */
 }
 .mode-switch {
   background-color: transparent;
@@ -112,6 +116,11 @@ nav .nav-items {
 }
 nav .nav-items a {
   color: var(--name-color);
+  transition: all 0.3s;
+  font-size: 1.1em;
+}
+nav .nav-items a:hover {
+  color: var(--header-btnH-color);
 }
 .Login-Register {
   color: white !important;
@@ -160,7 +169,6 @@ header .header-items a:hover {
   margin: 50px 0px;
   font-size: 1.1em;
   border: 0;
-
   padding: 10px;
   padding-right: 200px;
   box-shadow: 1px 0px 1px;
@@ -177,7 +185,7 @@ header .header-items a:hover {
   transition: all 0.5s;
   position: relative;
   top: -1.3px;
-  left: -10px;
+  left: -4.4px;
 }
 .section-1 .Search-section a:hover {
   background-color: var(--header-btnH-color);
@@ -229,7 +237,7 @@ header .header-items a:hover {
   display: flex;
   flex-direction: column;
   padding: var(--page-padding);
-  margin-top: 50px;
+  margin-top: 100px;
 }
 .section-2 h4 {
   font-size: 1.7em;
@@ -352,11 +360,11 @@ div.slider-container {
   font-size: 1.3em;
   padding: 7px 0;
 }
-.section-2 > div > div.Description p.Introduction span{
-font-style: oblique;
-border-bottom: 1px solid;
+.section-2 > div > div.Description p.Introduction span {
+  font-style: oblique;
+  border-bottom: 1px solid;
 }
-.section-2 > div > div.Description p.date{
+.section-2 > div > div.Description p.date {
   opacity: 0.6;
   font-size: 0.9em;
   font-style: italic;
@@ -365,11 +373,108 @@ border-bottom: 1px solid;
 
 /* Start section-3 style */
 
-/* End section-3 style */
+section.section-3 {
+  display: flex;
+  flex-direction: column;
+  padding: var(--page-padding);
+  margin-top: 5%;
+}
+section.section-3 h4 {
+  font-size: 1.5em;
+  color: var(--name-color);
+  user-select: none;
+}
+section.section-3 .product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between !important;
+  gap: 30px;
+  margin: 60px 0;
+  color: var(--name-color);
+}
+div.product-cards > div {
+  box-shadow: 1px 1px 3px var(--Box-shadow);
+  height: 460px;
+  border-radius: 15px;
+}
+section.section-3 .product-cards h6 {
+  opacity: 0.8;
+  font-size: 0.8em;
+  margin: 10px 0;
+  padding-left: 20px;
+}
+section.section-3 .product-cards p {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+section.section-3 .product-cards p.price {
+  margin-bottom: 20px;
+  font-style: italic;
+}
+section.section-3 .product-cards img {
+  width: 444px;
+  user-select: none;
+  border-radius: 50px;
+  padding: 20px 20px;
+}
+section.section-3 .product-cards a {
+  margin-left: 18px;
+  font-size: 1em;
+  border: 0;
+  padding: 10px 25px;
+  box-shadow: 1px 0px 1px;
+  border: 1px solid var(--name-color);
+  margin-right: 10px;
+  transition: all 0.5s;
+  color: var(--name-color);
+}
+section.section-3 .product-cards a:hover {
+  color: white;
+  background-color: var(--header-btnH-color);
+}
+div.Subscribe {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+div.Subscribe-form h5{
+color: var(--name-color);
+font-size: 1.3em;
+margin-top: 100px;
+}
 
+div.Subscribe-form input{
+  margin: 20px 0px;
+  font-size: 1.1em;
+  border: 0;
+  margin-bottom: 100px;
+  padding: 10px;
+  padding-right: 200px;
+  box-shadow: 1px 0px 1px;
+  outline: none;
+}
+div.Subscribe-form a{
+  color: white;
+  background-color: var(--shadow);
+  border-right: 1px solid var(--name-color);
+  border-top: 1px solid var(--name-color);
+  border-bottom: 1px solid var(--name-color);
+  padding: 12.5px 45px;
+  font-size: 0.8em;
+  transition: all 0.5s;
+  position: relative;
+  top: -1.3px;
+  left: -5px;
+}
+div.Subscribe-form a:hover{
+  background-color: var(--header-btnH-color);
+}
+/* End section-3 style */
 /* End main style */
 
 /* Start Footer style */
+
+
 
 /* End Footer style */
 
