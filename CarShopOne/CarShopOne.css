@@ -359,7 +359,7 @@ a.Make-menu:hover {
   /* height: 300px; */
   width: 430px;
 }
-.section-3 .section-3-product-cards > div:hover{
+.section-3 .section-3-product-cards > div:hover {
   background-color: var(--header-Card-color);
   scale: 1.05;
 }
@@ -413,24 +413,37 @@ footer div#footer-items ul li:hover {
 footer div#footer-items p {
   padding-bottom: 15px;
 }
-footer div#footer-socalmedia {
+footer div#footer-socialmedia a{
+  color: white;
+}
+footer div#footer-socialmedia {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
-footer div#footer-socalmedia i {
+footer div#footer-socialmedia i {
   font-size: 2em;
   cursor: pointer;
   transition: all 0.5s;
 }
-footer div#footer-socalmedia i.bxl-facebook-circle:hover {
-  color: rgba(0, 8, 255, 0.76);
-}
-footer div#footer-socalmedia i.bxl-twitter:hover {
+footer div#footer-socialmedia i.bxl-telegram:hover {
   color: rgb(4, 127, 242);
 }
-footer div#footer-socalmedia i.bxl-instagram:hover {
+footer div#footer-socialmedia i.bxl-youtube:hover {
+  color: rgb(202, 17, 17);
+}
+footer div#footer-socialmedia i.bxl-instagram:hover {
   color: rgb(200, 16, 197);
+}
+footer div#footer-socialmedia i p {
+  position: absolute;
+  font-size: 0.5em;
+  opacity: 0;
+  transition: all 0.5s;
+  color: var(--name-color);
+}
+footer div#footer-socialmedia i:hover p {
+  opacity: 1;
 }
 footer div#footer-items a {
   font-size: 1em;
@@ -441,7 +454,8 @@ footer div#footer-items a {
   border: 1px solid var(--name-color);
   margin-right: 10px;
   transition: all 0.5s;
-  color: var(--name-color);
+  color: white;
+  background-color: #000000;
   position: relative;
   right: 6px;
 }
