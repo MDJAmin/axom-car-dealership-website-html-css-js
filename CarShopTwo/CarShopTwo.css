@@ -9,6 +9,7 @@
 }
 html {
   transition: all 0.4s;
+  scroll-behavior: smooth;
   background-color: var(--main-bg);
 }
 /* Root */
@@ -151,9 +152,7 @@ header .header-items a:hover {
 /* End header style */
 
 /* Start main style */
-.section-1 {
-  margin-bottom: 100%;
-}
+/* Start section-1 style */
 .section-1 .Search-section {
   text-align: center;
 }
@@ -201,10 +200,10 @@ header .header-items a:hover {
 }
 .section-1 div.car-models > div a {
   text-align: center;
- color: black;
+  color: black;
   margin-bottom: 30px;
   font-weight: bold;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 1.3em;
 }
 .section-1 div.car-models div img.Sedans {
@@ -223,6 +222,52 @@ header .header-items a:hover {
   margin: auto;
   width: 60px;
 }
+
+/* Start section-2 style */
+
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  padding: var(--page-padding);
+  margin-top: 50px;
+
+}
+.section-2 h4 {
+  font-size: 1.7em;
+  margin-bottom: 30px;
+  color: var(--name-color);
+}
+.section-2 > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.section-2 > div > div {
+  background-color: white;
+  box-shadow: 1px 1px 3px var(--Box-shadow);
+  width: 450px;
+  height: 330px;
+  text-align: center;
+  border-radius: 15px;
+}
+.section-2 > div > div img {
+  padding: 30px 0;
+  padding-bottom: 15px;
+  width: 200px;
+  border-radius: 50%;
+}
+.section-2 > div > div h6 {
+font-size: 1.2em;
+}
+.section-2 > div > div p {
+  padding: 10px 0;
+}
+/* End section-2 style */
+
+/* Start section-3 style */
+
+/* End section-3 style */
+
 /* End main style */
 
 /* Start Footer style */
