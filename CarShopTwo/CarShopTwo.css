@@ -13,6 +13,14 @@ html {
   background-color: var(--main-bg);
   /* background-color: var(--body-color); */
 }
+
+/* body{
+  background: linear-gradient(135deg, blue, white);
+} */
+/* body{
+  background: linear-gradient(135deg, black, rgb(233, 199, 7));
+} */
+
 /* Root */
 
 :root {
@@ -55,30 +63,6 @@ html {
 .mode-switch:hover {
   color: var(--name-color);
 }
-#go-top {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  font-size: 13px;
-  border: none;
-  z-index: 99;
-  outline: none;
-  background-color: var(--name-color);
-  color: var(--main-bg);
-  border-radius: 3px;
-  cursor: pointer;
-  padding: 10px;
-  transition: all 0.5s;
-}
-
-#go-top:hover {
-  background-color: #d0d0d0;
-}
-#go-top i {
-  position: relative;
-  top: 1.7px;
-}
 /* Start nav style */
 
 nav {
@@ -103,17 +87,17 @@ nav .nav-header-items {
 }
 nav .nav-header-items h1 {
   color: var(--header-btnH-color);
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 2em;
 }
-#Logo{
-  width:80px;
+#Logo {
+  width: 80px;
   transition: all 0.5s;
   cursor: pointer;
-  }
- #Logo:hover{
-    scale: 1.1;
-  }
+}
+#Logo:hover {
+  scale: 1.1;
+}
 nav .nav-items {
   display: flex;
   align-items: center;
@@ -442,13 +426,13 @@ div.Subscribe {
   flex-direction: column;
   flex-wrap: wrap;
 }
-div.Subscribe-form h5{
-color: var(--name-color);
-font-size: 1.3em;
-margin-top: 100px;
+div.Subscribe-form h5 {
+  color: var(--name-color);
+  font-size: 1.3em;
+  margin-top: 100px;
 }
 
-div.Subscribe-form input{
+div.Subscribe-form input {
   margin: 20px 0px;
   font-size: 1.1em;
   border: 0;
@@ -458,7 +442,7 @@ div.Subscribe-form input{
   box-shadow: 1px 0px 1px;
   outline: none;
 }
-div.Subscribe-form a{
+div.Subscribe-form a {
   color: white;
   background-color: var(--shadow);
   border-right: 1px solid var(--name-color);
@@ -471,7 +455,7 @@ div.Subscribe-form a{
   top: -1.3px;
   left: -5px;
 }
-div.Subscribe-form a:hover{
+div.Subscribe-form a:hover {
   background-color: var(--header-btnH-color);
 }
 /* End section-3 style */
@@ -479,8 +463,98 @@ div.Subscribe-form a:hover{
 
 /* Start Footer style */
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 280px;
+  box-shadow: 0px -10px 20px -20px var(--header-btnH-color);
+}
+footer ul {
+  padding: 2% 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer ul li {
+  display: flex;
+  flex-direction: column;
+}
 
+div.Top-btn a {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
 
+li.footer-section-1 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 130px;
+}
+li.footer-section-1 ul a {
+  color: var(--name-color);
+  padding: 5px 0;
+  opacity: 0.9;
+}
+li.footer-section-1 ul h6 {
+  color: var(--name-color);
+  font-size: 1em;
+  padding-bottom: 4px;
+}
+.footer-section-2 div {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.footer-section-2 i {
+  font-size: 2em;
+  color: var(--name-color);
+  transition: all 0.4s;
+}
+i.bxl-telegram:hover {
+  color: rgb(4, 127, 242);
+}
+i.bxl-youtube:hover {
+  color: rgb(202, 17, 17);
+}
+i.bxl-instagram:hover {
+  color: rgb(200, 16, 197);
+}
+.footer-section-2 p {
+  color: var(--name-color) !important;
+}
+.footer-section-3 {
+  display: flex;
+  gap: 15px;
+}
+.footer-section-3 p {
+  color: var(--name-color);
+}
+.footer-section-3 p span {
+  color: var(--header-btnH-color);
+  border-bottom: 1px solid;
+  cursor: pointer;
+}
+.footer-section-4 {
+  display: flex;
+  gap: 15px;
+}
+.footer-section-4 a {
+  color: var(--name-color);
+}
+
+footer > div {
+  padding: 0 5%;
+}
+footer div.Top-btn a {
+  color: var(--main-bg);
+  padding: 12px;
+  justify-content: center;
+  background-color: var(--name-color);
+}
 /* End Footer style */
 
 /* animation for hidden iteams*/
