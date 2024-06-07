@@ -1,45 +1,55 @@
 /* Normalisation */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: Helvetica, Arial, Helvetica, sans-serif;
-  }
-  /* Root */
-  :root {
-    --page-padding: 0px 8%;
-    --main-bg: #f8f8f8;
-    --box-bg: #ebebebe8;
-    --nav-bg: rgb(240, 235, 235);
-    --name-color: #232323;
-    --header-btnH-color: #0b6ab8;
-    --card-bg-text: #343434;
-    --shadow: #232323;
-    --shadow-btn: #232323;
-  }
-  
-  .dark:root {
-    --main-bg: #000000;
-    --box-bg: #0e0e0ef8;
-    --nav-bg: #0e0e0ef8;;
-    --name-color: #f8f8f8;
-    --header-btnH-color: #b8860b;
-    --card-bg-text: #ffffff;
-    --shadow-btn: #000000;
-  }
-  .mode-switch {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    color: var(--name-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: Helvetica, Arial, Helvetica, sans-serif;
+}
+html {
+  overflow: hidden;
+  transition: all 0.4s;
+}
+/* Root */
+:root {
+  --page-padding: 0px 8%;
+  --main-bg: #f8f8f8;
+  --box-bg: #ebebebe8;
+  --nav-bg: rgb(240, 235, 235);
+  --name-color: #232323;
+  --header-btnH-color: #0e7edbf0;
+  --header-Card-color: #0e7fdb41;
+  --card-bg-text: #343434;
+  --shadow: black;
+  --Box-shadow: #2323239f;
+  --shadow-btn: #232323;
+}
+
+.dark:root {
+  --main-bg: #000000;
+  --box-bg: #0e0e0ef8;
+  --nav-bg: #0e0e0ef8;
+  --name-color: #f8f8f8;
+  --header-btnH-color: #b8860b;
+  --header-Card-color: #b8870b3f;
+  --card-bg-text: #ffffff;
+  --Box-shadow: #ffffffa8;
+  --shadow-btn: #000000;
+}
+.mode-switch {
+  background-color: transparent;
+  border: none;
+  color: var(--header-btnH-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.mode-switch:hover {
+  color: var(--name-color);
+}
 #go-top {
   display: none;
   position: fixed;
@@ -64,19 +74,108 @@
   position: relative;
   top: 1.7px;
 }
+/* Start nav style */
 
-  /* Start nav style */
+nav {
+  padding: var(--page-padding);
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  height: 90px;
+  width: 100%;
+  background-color: var(--nav-bg);
+}
+nav .nav-header-items {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+nav .nav-header-items h1 {
+  color: var(--header-btnH-color);
+}
+nav .nav-header-items i {
+  font-size: 1.6em;
+  margin-bottom: 4px;
+  color: var(--name-color);
+}
+nav .nav-items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+nav .nav-items a {
+  color: var(--name-color);
+}
+.Login-Register {
+  color: white !important;
+  background-color: var(--shadow);
+  border: 1px solid var(--name-color);
+  padding: 10px 30px;
+  font-size: 0.9em;
+  transition: all 0.5s;
+}
+.Login-Register:hover {
+  background-color: var(--header-btnH-color);
+}
+/* End nav style */
 
-  /* End nav style */
-  
-  /* Start header style */
+/* Start header style */
 
-  /* End header style */
-  
-  /* Start main style */
+/* End header style */
 
-  /* End main style */
-  
-  /* Start Footer style */
+/* Start main style */
 
-  /* End Footer style */
+/* End main style */
+
+/* Start Footer style */
+
+/* End Footer style */
+
+/* animation for hidden iteams*/
+/* animation 1 */
+.hidden {
+  opacity: 0;
+  transition: all 2s;
+  transform: translateX(100%);
+}
+/* animation 2 */
+.hiddenP {
+  opacity: 0;
+  scale: 0.9;
+  transition: all 1.3s;
+}
+/* animation 3 */
+.hiddenCardsOne {
+  opacity: 0;
+  transition: all 1.5s;
+  transform: translateX(100%);
+}
+.hiddenCardsTwo {
+  opacity: 0;
+  transition: all 1.5s;
+  transform: translateX(-100%);
+}
+
+/* animation 4 */
+.up-hidden-input {
+  opacity: 0;
+  transition: all 1.5s;
+  transform: translatey(100%);
+}
+/*Show*/
+.show {
+  opacity: 1;
+  scale: 1;
+  transform: translateX(0);
+  transform: translatey(0);
+}
+/* animation footer */
+.up-hidden {
+  opacity: 0;
+  transition: all 1.5s;
+  transform: translatey(100%);
+}
+.up-show {
+  transform: translatey(0%);
+  opacity: 1;
+}
