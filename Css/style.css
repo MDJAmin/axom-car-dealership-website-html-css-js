@@ -262,7 +262,7 @@ img#section-1-product-img-1 {
   border-radius: 40px;
   position: relative;
   left: 30%;
-  top: 65px;
+  top: 55px;
   box-shadow: 1px 3px 4px var(--shadow);
   transition: all 0.5s;
   opacity: 1;
@@ -278,7 +278,7 @@ img#section-1-product-img-2 {
   position: absolute;
   width: 27%;
   height: 70.2%;
-  top: 15.5%;
+  top: 15.9%;
   left: 65%;
   border-radius: 40px;
   box-shadow: 1px 3px 4px var(--shadow);
@@ -584,7 +584,6 @@ p.price::after {
   flex-wrap: wrap;
   gap: 50px;
   margin: 100px 0;
-  margin-left: 80px;
 }
 .section-4 img {
   width: 600px;
@@ -676,7 +675,7 @@ div.section-4-Description p:first-child {
   font-size: 0.8em;
   transition: all 0.5s;
   position: relative;
-  top: -1.3px;
+  top: -1.1px;
   left: -10px;
 }
 .section-5 a:hover {

@@ -263,6 +263,11 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+.Forgot{
+position: absolute;
+top: 41%;
+right: 49px;
+}
 .field-checkbox input {
   width: 20px;
   height: 15px;

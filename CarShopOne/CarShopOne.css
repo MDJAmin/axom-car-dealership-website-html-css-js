@@ -141,10 +141,10 @@ div.nav-inp a {
   border-right: 1px solid var(--name-color);
   border-top: 1px solid var(--name-color);
   border-bottom: 1px solid var(--name-color);
-  padding: 10px 30px;
+  padding: 10.1px 30px;
   font-size: 0.9em;
   position: relative;
-  top: 0.4px;
+  top: -0.65px;
   left: -10px;
   transition: all 0.5s;
 }
@@ -181,13 +181,11 @@ header div.header-bg a {
 .section-1 {
   display: flex;
   flex-wrap: wrap;
-  gap: 3%;
-  padding: 0 7%;
-  margin-top: 5%;
+  padding: 0 12%;
   margin-bottom: 4%;
 }
 .section-1 .section-1-title-cards {
-  margin: 5% 0px;
+  margin: 3% 0px;
 }
 .section-1-title-cards a {
   opacity: 1 !important;
@@ -309,7 +307,7 @@ a.Make-menu:hover {
   gap: 30px;
 }
 .section-2 .section-2-product-cards img {
-  width: 450px;
+  width: 400px;
   border-radius: 20px;
 }
 .section-2-product-cards h5 {
@@ -360,7 +358,7 @@ a.Make-menu:hover {
   box-shadow: 1px 1px 3px var(--Box-shadow);
   border: solid 0.1px rgba(255, 255, 255, 0.366);
   /* height: 300px; */
-  width: 430px;
+  width: 400px;
 }
 .section-3 .section-3-product-cards > div:hover {
   background-color: var(--header-Card-color);
