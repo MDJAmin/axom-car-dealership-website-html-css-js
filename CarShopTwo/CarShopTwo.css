@@ -84,7 +84,7 @@ nav {
 nav .nav-header-items {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 1px;
 }
 nav .nav-header-items h1 {
   color: var(--header-btnH-color);
@@ -107,7 +107,7 @@ nav .nav-items {
 nav .nav-items a {
   color: var(--name-color);
   transition: all 0.3s;
-  font-size: 1.1em;
+  font-size: 1.04em;
 }
 nav .nav-items a:hover {
   color: var(--header-btnH-color);
@@ -199,8 +199,8 @@ header .header-items a:hover {
   cursor: pointer;
 }
 .section-1 div.car-models > div:hover{
-  box-shadow: 1px 3px 3px var(--header-btnH-color);
-  scale: 1.1;
+  box-shadow: 0px 0px 20px var(--header-btnH-color);
+  scale: 1.05;
 }
 .section-1 div.car-models > div a {
   text-align: center;

@@ -21,7 +21,7 @@ html {
   --box-bg: #ebebebe8;
   --nav-bg: rgb(240, 235, 235);
   --name-color: #232323;
-  --header-btnH-color: #0e7edbf0;
+  --header-btnH-color: #0e7fdb;
   --header-Card-color: #0e7fdb41;
   --card-bg-text: #343434;
   --shadow: black;
@@ -141,10 +141,10 @@ div.nav-inp a {
   border-right: 1px solid var(--name-color);
   border-top: 1px solid var(--name-color);
   border-bottom: 1px solid var(--name-color);
-  padding: 10.1px 30px;
+  padding: 10.9px 30px;
   font-size: 0.9em;
   position: relative;
-  top: -0.65px;
+  top: -0.70px;
   left: -10px;
   transition: all 0.5s;
 }
@@ -309,6 +309,10 @@ a.Make-menu:hover {
 .section-2 .section-2-product-cards img {
   width: 400px;
   border-radius: 20px;
+  transition: all 0.5s;
+}
+.section-2 .section-2-product-cards img:hover{
+scale: 1.03;
 }
 .section-2-product-cards h5 {
   font-size: 1.1em;
@@ -415,7 +419,7 @@ footer div#footer-items p {
   padding-bottom: 15px;
 }
 footer div#footer-socialmedia a{
-  color: white;
+  color: var(--name-color);
 }
 footer div#footer-socialmedia {
   display: flex;
@@ -458,7 +462,7 @@ footer div#footer-items a {
   color: white;
   background-color: #000000;
   position: relative;
-  right: 6px;
+  right: 5px;
 }
 footer div#footer-items a:hover {
   color: white;
