@@ -63,6 +63,7 @@ Hex: #D3D3D3
 Usage: Borders, shadows, and dividers */
 /* Start header style */
 /* Start nav style */
+
 nav {
   background-color: var(--nav-bg);
   position: fixed;

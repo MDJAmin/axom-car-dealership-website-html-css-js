@@ -27,6 +27,8 @@
 
 "use strict";
 
+// slider comments
+
 document.addEventListener("DOMContentLoaded", function () {
   const items = document.querySelectorAll(".slider-item");
   const leftArrow = document.getElementById("left-arrow");

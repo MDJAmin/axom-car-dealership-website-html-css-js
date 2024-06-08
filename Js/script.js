@@ -1,14 +1,20 @@
 "use strict";
+// Dark and light Mood
+// Get items
 let moodBtn = document.querySelector("#Moon");
 document.addEventListener("DOMContentLoaded", () => {
   const modeSwitch = document.querySelector(".mode-switch");
+
+  // Save in local Storage
+
   const darkModeStored = localStorage.getItem("darkMode");
+
+  // Check if its dark or light
 
   if (darkModeStored === "true") {
     document.documentElement.classList.add("dark");
     modeSwitch.classList.add("active");
   }
-
   modeSwitch.addEventListener("click", () => {
     document.documentElement.classList.toggle("dark");
     modeSwitch.classList.toggle("active");
@@ -19,13 +25,16 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-let Topbutton = document.getElementById("go-top");
+// Go top Btn
 
+let Topbutton = document.getElementById("go-top");
 window.onscroll = function () {
   scrollFunction();
 };
-
 function scrollFunction() {
+
+  // Set value for the time that btn should be in the page 
+
   if (
     document.body.scrollTop > 800 ||
     document.documentElement.scrollTop > 800
@@ -110,6 +119,9 @@ function topFunction() {
 // }
 // window.addEventListener('scroll',scrollFunc)
 
+// Show & hide Card and items animations
+
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -156,6 +168,9 @@ hideup.forEach((el) => showup.observe(el));
 //   langMenu.style.opacity = 0;
 //   langMenu.style.display = "none";
 // });
+
+// lang menu
+
 let langBtn = document.querySelector(".lang");
 let langMenu = document.querySelector(".lang-menu");
 
