@@ -36,36 +36,42 @@
                                 </button>
 
                                 <span class="padding-bottom--15">Sign in to your account</span>
-                                <form id="stripe-login">
+                                <form id="stripe-login" autocomplete="off">
                                     <div class="field padding-bottom--24">
-                                        <label for="email">Email</label>
-                                        <input type="email" name="email">
+                                        <label id="email" for="email">Email</label>
+                                        <input type="email" name="email" autocomplete="off">
                                     </div>
                                     <div class="field padding-bottom--24">
                                         <div class="grid--50-50">
-                                            <label for="password">Password</label>
+                                            <label id="password" for="password">Password</label>
                                             <div class="reset-pass">
-                                                <a href="#">Forgot your password?</a>
+                                                <a href="#" id="Link-p">Forgot your password?</a>
                                             </div>
                                         </div>
-                                        <input type="password" name="password">
+                                        <div class="password-container">
+                                            <input type="password" name="password" id="passwordInput" autocomplete="off">
+                                            <button type="button" id="togglePassword" class="toggle-password">
+                                                <i class="bx bx-show"></i>
+                                            </button>
+                                        </div>
                                     </div>
                                     <div class="field field-checkbox padding-bottom--24 flex-flex align-center">
                                         <label for="checkbox">
-                                            <input type="checkbox" name="checkbox"> Stay signed in for a week
+                                            <input type="checkbox" name="checkbox"> <p id="checkbox-sentence">Stay signed in for a week </p>
+                                            <span class="custom-checkbox"></span>
                                         </label>
                                     </div>
                                     <div class="field padding-bottom--24">
                                         <input type="submit" name="submit" value="Continue">
                                     </div>
                                     <div class="field">
-                                        <a class="ssolink" href="#">Use single sign-on (Google) instead</a>
+                                        <a class="ssolink" href="#" id="Link-p">Use single sign-on (Google) instead</a>
                                     </div>
                                 </form>
                             </div>
                         </div>
                         <div class="footer-link padding-top--24">
-                            <span>Don't have an account? <a href="">Sign up</a></span>
+                            <span>Don't have an account? <a href="" id="Link-p">Sign up</a></span>
                             <div class="listing padding-top--24 padding-bottom--24 flex-flex center-center">
                                 <span><a href="#">Contact</a></span>
                                 <span><a href="#">Privacy & terms</a></span>
