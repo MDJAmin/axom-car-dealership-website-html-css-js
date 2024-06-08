@@ -168,3 +168,5 @@ langBtn.addEventListener("click", () => {
     langMenu.style.display = "none";
   }
 });
+
+// localStorage.clear()

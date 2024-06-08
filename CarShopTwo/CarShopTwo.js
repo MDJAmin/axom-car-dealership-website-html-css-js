@@ -144,3 +144,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //     showCard(currentIndex);
 //   });
+
+// localStorage.clear()
