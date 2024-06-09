@@ -38,32 +38,6 @@ html {
   overflow-x: hidden;
 }
 
-/* Black:
-Hex: #000000
-Usage: Backgrounds, text, and accents
-
-Gold:
-Hex: #FFD700
-Usage: Highlights, buttons, and decorative elements
-
-White:
-Hex: #FFFFFF
-Usage: Backgrounds, text, and areas needing contrast
-
-Dark Gold:
-Hex: #B8860B
-Usage: Hover effects, borders, and subtle accents
-
-Light Gold:
-Hex: #FFF8DC
-Usage: Backgrounds, secondary buttons, and highlights
-
-Gray:
-Hex: #D3D3D3
-Usage: Borders, shadows, and dividers */
-/* Start header style */
-/* Start nav style */
-
 nav {
   background-color: var(--nav-bg);
   position: fixed;
@@ -189,34 +163,10 @@ ul#nav-items a.Cars::before {
 ul#nav-items a.Cars:hover::before {
   width: 3.5%;
 }
-/* header nav > ul > li > a::before {
 
-} */
-/* header nav ul li a:hover::before {
-  width: 4%;
-} */
 header nav ul li a:hover {
   color: var(--header-btnH-color) !important;
 }
-/* .drop-menu {
-  position: fixed;
-  height: 0%;
-  top: 10%;
-  left: 50px;
-  right: 50px;
-  background-color: var(--box-bg);
-  transition: all 0.5s;
-  border-radius: 0 0 10px 10px;
-}
-.drop-menu {
-  transition: all 0.5s;
-  opacity: 0;
-}
-
-header nav ul li a:hover .drop-menu {
-  height: 80%;
-  opacity: 1;
-} */
 
 /* End nav style */
 /* Start section-1 style */
@@ -716,12 +666,6 @@ div.section-4-Description p:first-child {
   transition: all 1.5s;
   transform: translatey(100%);
 }
-/* animation 5
-.drop-down-nav {
-  opacity: 0;
-  transition: all 1s;
-  transform: translatey(-100%);
-} */
 
 /*Show*/
 .show {
