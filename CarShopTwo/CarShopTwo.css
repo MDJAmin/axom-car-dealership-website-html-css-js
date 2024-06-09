@@ -15,10 +15,10 @@ html {
   /* background-color: var(--body-color); */
 }
 
-/* body{
-  background: linear-gradient(135deg, blue, white);
-} */
-/* body{
+body{
+  background: var(--body-color);
+} 
+ /* body{
   background: linear-gradient(135deg, black, rgb(233, 199, 7));
 } */
 
@@ -38,6 +38,7 @@ html {
   --shadow-btn: #232323;
   /* --body-color: linear-gradient(135deg, blue, white); */
 }
+
 
 .dark:root {
   --main-bg: #000000;
