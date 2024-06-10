@@ -12,18 +12,16 @@ html {
   scroll-behavior: smooth;
   background-color: var(--main-bg);
   overflow-x: hidden;
-  /* background-color: var(--body-color); */
 }
 
-body{
+body {
   background: var(--body-color);
-} 
- /* body{
+}
+/* body{
   background: linear-gradient(135deg, black, rgb(233, 199, 7));
 } */
 
 /* Root */
-
 :root {
   --page-padding: 0px 8%;
   --main-bg: #f8f8f8;
@@ -38,8 +36,6 @@ body{
   --shadow-btn: #232323;
   /* --body-color: linear-gradient(135deg, blue, white); */
 }
-
-
 .dark:root {
   --main-bg: #000000;
   --box-bg: #0e0e0ef8;
@@ -66,7 +62,6 @@ body{
   color: var(--name-color);
 }
 /* Start nav style */
-
 nav {
   padding: var(--page-padding);
   display: flex;
@@ -114,9 +109,7 @@ nav .nav-items a:hover {
   color: var(--header-btnH-color);
 }
 /* End nav style */
-
 /* Start header style */
-
 .header-items {
   position: relative;
 }
@@ -139,7 +132,6 @@ header .header-items a:hover {
   scale: 1.1;
 }
 /* End header style */
-
 /* Start main style */
 /* Start section-1 style */
 .section-1 .Search-section {
@@ -188,7 +180,7 @@ header .header-items a:hover {
   transition: all 0.5s;
   cursor: pointer;
 }
-.section-1 div.car-models > div:hover{
+.section-1 div.car-models > div:hover {
   box-shadow: 0px 0px 20px var(--header-btnH-color);
   scale: 1.05;
 }
@@ -216,7 +208,6 @@ header .header-items a:hover {
   margin: auto;
   width: 60px;
 }
-
 /* Start section-2 style */
 .section-2 {
   display: flex;
@@ -249,7 +240,7 @@ header .header-items a:hover {
   top: -30px;
   transition: all 0.5s;
 }
-.section-2 > div > div.slider:hover img{
+.section-2 > div > div.slider:hover img {
   border-radius: 0;
 }
 .section-2 > div > div img {
@@ -300,29 +291,24 @@ div.slider-container {
   bottom: 37px;
   padding: 0 0 0 5px;
 }
-
 .section-2 #right-arrow:hover {
   color: white;
   background-color: var(--header-btnH-color);
 }
-
 .section-2 #left-arrow:hover {
   color: white;
   background-color: var(--header-btnH-color);
 }
-
 .slider-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .slider {
   display: flex;
   overflow: hidden;
   width: 450px;
 }
-
 .slider-item {
   display: none;
   opacity: 0;
@@ -330,7 +316,6 @@ div.slider-container {
   width: 100%;
   text-align: center;
 }
-
 .slider-item.active {
   display: block;
   opacity: 1;
@@ -356,11 +341,8 @@ div.slider-container {
   font-size: 0.9em;
   font-style: italic;
 }
-
 /* End section-2 style */
-
 /* Start section-3 style */
-
 section.section-3 {
   display: flex;
   flex-direction: column;
@@ -386,10 +368,10 @@ div.product-cards > div {
   border-radius: 15px;
   transition: all 0.4s;
 }
-div.product-cards > div:hover{
+div.product-cards > div:hover {
   background-color: var(--header-Card-color);
 }
-div.product-cards > div:hover img{
+div.product-cards > div:hover img {
   border-radius: 0;
 }
 section.section-3 .product-cards h6 {
@@ -438,7 +420,6 @@ div.Subscribe-form h5 {
   font-size: 1.3em;
   margin-top: 100px;
 }
-
 div.Subscribe-form input {
   margin: 20px 0px;
   font-size: 1.1em;
@@ -467,9 +448,7 @@ div.Subscribe-form a:hover {
 }
 /* End section-3 style */
 /* End main style */
-
 /* Start Footer style */
-
 footer {
   display: flex;
   flex-direction: column;
@@ -487,13 +466,11 @@ footer ul li {
   display: flex;
   flex-direction: column;
 }
-
 div.Top-btn a {
   display: flex;
   justify-content: center;
   margin-bottom: 25px;
 }
-
 li.footer-section-1 ul {
   display: flex;
   flex-direction: column;
@@ -506,7 +483,7 @@ li.footer-section-1 ul a {
   padding: 5px 0;
   opacity: 0.9;
 }
-li.footer-section-1 ul a:hover{
+li.footer-section-1 ul a:hover {
   color: var(--header-btnH-color);
 }
 li.footer-section-1 ul h6 {
@@ -556,7 +533,6 @@ i.bxl-instagram:hover {
 .footer-section-4 a {
   color: var(--name-color);
 }
-
 footer > div {
   padding: 0 5%;
 }
@@ -566,18 +542,17 @@ footer div.Top-btn a {
   justify-content: center;
   background-color: var(--name-color);
 }
-footer div.Top-btn a:hover{
+footer div.Top-btn a:hover {
   background-color: var(--header-btnH-color);
   color: white;
 }
-footer a{
+footer a {
   transition: all 0.3s;
 }
-footer a:hover{
+footer a:hover {
   color: var(--header-btnH-color);
 }
 /* End Footer style */
-
 /* animation for hidden iteams*/
 /* animation 1 */
 .hidden {

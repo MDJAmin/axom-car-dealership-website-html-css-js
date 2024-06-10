@@ -283,7 +283,6 @@ img#section-1-product-img-1 {
   transition: all 0.5s;
   opacity: 1;
   cursor: pointer;
-  /* border: 0.9px solid rgba(23, 23, 23, 0.329); */
 }
 #section-1-product-img-1:hover {
   opacity: 1;
@@ -511,7 +510,6 @@ img#section-1-product-img-3:hover {
   scale: 1.05;
   filter: grayscale(-0%);
 }
-
 .section-2 p {
   margin-top: 10px;
   font-weight: 600;
@@ -520,10 +518,8 @@ img#section-1-product-img-3:hover {
   margin: 10% 0;
   text-align: center;
 }
-
 /* End section-2 style */
 /* Start section-3 style */
-
 .section-3 {
   display: flex;
   flex-wrap: wrap;
@@ -574,7 +570,6 @@ p.price::after {
   opacity: 0.5;
   background-color: var(--name-color);
 }
-
 .section-3 .section-3-product-div {
   display: flex;
   gap: 30px;
@@ -699,56 +694,6 @@ div.section-4-Description p:first-child {
 }
 /* End section-5 style */
 /* End main style */
-
-/* animation for hidden iteams*/
-/* animation 1 */
-.hidden {
-  opacity: 0;
-  transition: all 2s;
-  transform: translateX(100%);
-}
-/* animation 2 */
-.hiddenP {
-  opacity: 0;
-  scale: 0.9;
-  transition: all 1.3s;
-}
-/* animation 3 */
-.hiddenCardsOne {
-  opacity: 0;
-  transition: all 1.5s;
-  transform: translateX(100%);
-}
-.hiddenCardsTwo {
-  opacity: 0;
-  transition: all 1.5s;
-  transform: translateX(-100%);
-}
-
-/* animation 4 */
-.up-hidden-input {
-  opacity: 0;
-  transition: all 1.5s;
-  transform: translatey(100%);
-}
-
-/*Show*/
-.show {
-  opacity: 1;
-  scale: 1;
-  transform: translateX(0);
-  transform: translatey(0);
-}
-/* animation footer */
-.up-hidden {
-  opacity: 0;
-  transition: all 1.5s;
-  transform: translatey(100%);
-}
-.up-show {
-  transform: translatey(0%);
-  opacity: 1;
-}
 /* Start Footer style */
 footer {
   display: flex;
@@ -823,8 +768,54 @@ footer a:hover {
   scale: 1.1;
 }
 /* End Footer style */
-
 .under-footer-dis {
   padding: 50px 0px;
   text-align: center;
+}
+/* animation for hidden iteams*/
+/* animation 1 */
+.hidden {
+  opacity: 0;
+  transition: all 2s;
+  transform: translateX(100%);
+}
+/* animation 2 */
+.hiddenP {
+  opacity: 0;
+  scale: 0.9;
+  transition: all 1.3s;
+}
+/* animation 3 */
+.hiddenCardsOne {
+  opacity: 0;
+  transition: all 1.5s;
+  transform: translateX(100%);
+}
+.hiddenCardsTwo {
+  opacity: 0;
+  transition: all 1.5s;
+  transform: translateX(-100%);
+}
+/* animation 4 */
+.up-hidden-input {
+  opacity: 0;
+  transition: all 1.5s;
+  transform: translatey(100%);
+}
+/*Show*/
+.show {
+  opacity: 1;
+  scale: 1;
+  transform: translateX(0);
+  transform: translatey(0);
+}
+/* animation footer */
+.up-hidden {
+  opacity: 0;
+  transition: all 1.5s;
+  transform: translatey(100%);
+}
+.up-show {
+  transform: translatey(0%);
+  opacity: 1;
 }

@@ -4,13 +4,9 @@
 let moodBtn = document.querySelector("#Moon");
 document.addEventListener("DOMContentLoaded", () => {
   const modeSwitch = document.querySelector(".mode-switch");
-
   // Save in local Storage
-
   const darkModeStored = localStorage.getItem("darkMode");
-
   // Check if its dark or light
-
   if (darkModeStored === "true") {
     document.documentElement.classList.add("dark");
     modeSwitch.classList.add("active");
@@ -26,14 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Go top Btn
-
 let Topbutton = document.getElementById("go-top");
 window.onscroll = function () {
   scrollFunction();
 };
 function scrollFunction() {
   // Set value for the time that btn should be in the page
-
   if (
     document.body.scrollTop > 800 ||
     document.documentElement.scrollTop > 800
@@ -43,12 +37,10 @@ function scrollFunction() {
     Topbutton.style.display = "none";
   }
 }
-
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -70,7 +62,6 @@ hiddeninp.forEach((el) => observer.observe(el));
 // hiddenNav.forEach((el) => observer.observe(el));
 const hiddenCardsThree = document.querySelectorAll(".hiddenCardsThree-p");
 hiddenCardsThree.forEach((el) => observer.observe(el));
-
 const showup = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     // console.log(entry)
@@ -83,10 +74,8 @@ const showup = new IntersectionObserver((entries) => {
 });
 const hideup = document.querySelectorAll(".up-hidden");
 hideup.forEach((el) => showup.observe(el));
-
 let langBtn = document.querySelector(".lang");
 let langMenu = document.querySelector(".lang-menu");
-
 langBtn.addEventListener("click", () => {
   if (langMenu.style.opacity === "0") {
     langMenu.style.opacity = 1;
@@ -97,6 +86,8 @@ langBtn.addEventListener("click", () => {
   }
 });
 
+
+
 document.addEventListener("DOMContentLoaded", () => {
   const dealershipsLink = document.querySelector(".Car-Shop-1");
   const financingLink = document.querySelector(".Car-Shop-2");
@@ -104,7 +95,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeModal = document.querySelector(".modal .close");
   const loginRegisterBtn = document.querySelector(".Login-Register");
   const token = localStorage.getItem("token");
-
   // Update login button based on token presence
   const updateLoginButton = () => {
     if (token) {
@@ -115,9 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
       loginRegisterBtn.href = "../Sign-Up/Login-Register.html";
     }
   };
-
   updateLoginButton();
-
   loginRegisterBtn.addEventListener("click", (event) => {
     if (token) {
       localStorage.clear(); // Clear local storage
@@ -125,29 +113,24 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.reload(); // Reload to reset state
     }
   });
-
   const showModal = () => {
     if (!token) {
       // Only show modal if user is not logged in
       loginModal.style.display = "block";
     }
   };
-
   closeModal.onclick = () => {
     loginModal.style.display = "none";
   };
-
   window.onclick = (event) => {
     if (event.target === loginModal) {
       loginModal.style.display = "none";
     }
   };
-
   // Show modal on 75% scroll
   window.onscroll = () => {
     const scrollPosition = window.scrollY + window.innerHeight;
     const documentHeight = document.documentElement.scrollHeight;
-
     if (
       scrollPosition / documentHeight >= 0.75 &&
       !localStorage.getItem("modalShown")
@@ -156,7 +139,6 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem("modalShown", "true");
     }
   };
-
   const handleNavigation = (event, url) => {
     if (!token) {
       event.preventDefault();
@@ -165,14 +147,12 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = url;
     }
   };
-
   dealershipsLink.addEventListener("click", (event) =>
     handleNavigation(event, "./CarShopOne/CarShopOne.html")
   );
   financingLink.addEventListener("click", (event) =>
     handleNavigation(event, "./CarShopTwo/CarShopTwo.html")
   );
-
   // Theme switcher
   const themeSwitch = document.querySelector(".mode-switch");
   themeSwitch.addEventListener("click", () => {

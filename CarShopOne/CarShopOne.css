@@ -69,7 +69,6 @@ html {
   padding: 10px;
   transition: all 0.5s;
 }
-
 #go-top:hover {
   background-color: #d0d0d0;
 }
@@ -77,10 +76,8 @@ html {
   position: relative;
   top: 1.7px;
 }
-
 /* Start header style */
 /* Start nav style */
-
 header nav {
   display: flex;
   justify-content: space-between;
@@ -97,18 +94,18 @@ header nav div.nav-title {
   cursor: pointer;
   transition: all 0.5s;
 }
- #Logo{
-  width:80px;
+#Logo {
+  width: 80px;
   transition: all 0.5s;
   cursor: pointer;
-  }
- #Logo:hover{
-    scale: 1.1;
-  }
+}
+#Logo:hover {
+  scale: 1.1;
+}
 header nav div.nav-title h1 {
   color: var(--header-btnH-color);
   font-size: 2em;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 header nav div.nav-items {
   display: flex;
@@ -144,7 +141,7 @@ div.nav-inp a {
   padding: 10.9px 30px;
   font-size: 0.9em;
   position: relative;
-  top: -0.70px;
+  top: -0.7px;
   left: -10px;
   transition: all 0.5s;
 }
@@ -157,7 +154,6 @@ header div.header-bg a:hover {
   scale: 1.1;
 }
 /* End nav style */
-
 header div.header-bg {
   position: relative;
 }
@@ -175,7 +171,6 @@ header div.header-bg a {
   font-size: 0.9em;
 }
 /* End header style */
-
 /* Start main style */
 /* Start section-1 style */
 .section-1 {
@@ -271,7 +266,6 @@ a.Make-menu:hover {
   color: white;
   background-color: var(--header-btnH-color);
 }
-
 .section-1-product-cards p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-bottom: 15px;
@@ -288,7 +282,6 @@ a.Make-menu:hover {
   background-color: var(--header-btnH-color);
 }
 /* End section-1 style */
-
 /* Start section-2 style */
 .section-2 {
   display: flex;
@@ -311,8 +304,8 @@ a.Make-menu:hover {
   border-radius: 20px;
   transition: all 0.5s;
 }
-.section-2 .section-2-product-cards img:hover{
-scale: 1.03;
+.section-2 .section-2-product-cards img:hover {
+  scale: 1.03;
 }
 .section-2-product-cards h5 {
   font-size: 1.1em;
@@ -336,11 +329,8 @@ scale: 1.03;
   color: white;
   background-color: var(--header-btnH-color);
 }
-
 /* End section-2 style */
-
 /* Start section-3 style */
-
 .section-3 {
   display: flex;
   flex-direction: column;
@@ -387,14 +377,8 @@ scale: 1.03;
   padding-bottom: 20px;
   color: #b8860b;
 }
-/* .section-3 .section-3-product-cards > div > i:last-child{
-  background: rgb(184,134,11);
-background: linear-gradient(90deg, rgba(184,134,11,1) 50%, rgba(0,0,0,1) 50%);
-} */
-
 /* End section-3 style */
 /* End main style */
-
 /* Start Footer style */
 footer {
   display: flex;
@@ -418,7 +402,7 @@ footer div#footer-items ul li:hover {
 footer div#footer-items p {
   padding-bottom: 15px;
 }
-footer div#footer-socialmedia a{
+footer div#footer-socialmedia a {
   color: var(--name-color);
 }
 footer div#footer-socialmedia {
@@ -469,7 +453,6 @@ footer div#footer-items a:hover {
   background-color: var(--header-btnH-color);
 }
 /* End Footer style */
-
 /* animation for hidden iteams*/
 /* animation 1 */
 .hidden {
@@ -494,7 +477,6 @@ footer div#footer-items a:hover {
   transition: all 1.5s;
   transform: translateX(-100%);
 }
-
 /* animation 4 */
 .up-hidden-input {
   opacity: 0;
