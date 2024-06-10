@@ -101,7 +101,7 @@ li#Logo-brandname #Logo:hover {
 }
 h1 {
   color: var(--header-btnH-color);
-  font-size: 2.2em;
+  font-size: 2em;
   font-family: "Courier New", Courier, monospace;
 }
 a.Search,
@@ -110,6 +110,7 @@ a.Cars {
 }
 header nav ul li.pages {
   display: flex;
+  align-items: center;
   gap: 30px;
 }
 header nav ul li a {
@@ -152,6 +153,10 @@ ul#nav-items a.Car-Shop-2::before {
 ul#nav-items a.Car-Shop-2:hover::before {
   width: 4.1%;
 }
+ul#nav-items a.Search{
+  /* display: none; */
+padding-bottom: 6px;
+}
 ul#nav-items a.Search::before {
   content: "";
   position: absolute;
@@ -163,6 +168,10 @@ ul#nav-items a.Search::before {
 }
 ul#nav-items a.Search:hover::before {
   width: 3%;
+}
+ul#nav-items a.Cars{
+   /* display: none; */
+   padding-bottom: 6px;
 }
 ul#nav-items a.Cars::before {
   content: "";
