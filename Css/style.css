@@ -7,7 +7,6 @@
   list-style: none;
   font-family: Helvetica, Arial, Helvetica, sans-serif;
 }
-
 /* Root */
 :root {
   --page-padding: 0px 8%;
@@ -22,7 +21,6 @@
   --shadow-btn: #232323;
   --modal-bg: black;
 }
-
 .dark:root {
   --main-bg: #000000;
   --box-bg: #0e0e0ef8;
@@ -41,7 +39,7 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-
+/* Start nav style */
 nav {
   background-color: var(--nav-bg);
   position: fixed;
@@ -118,7 +116,6 @@ header nav ul li a {
   color: var(--name-color) !important;
   transition: all 0.5s;
 }
-
 ul#nav-items a.Home::before {
   content: "";
   position: absolute;
@@ -179,13 +176,10 @@ ul#nav-items a.Cars::before {
 ul#nav-items a.Cars:hover::before {
   width: 3.5%;
 }
-
 header nav ul li a:hover {
   color: var(--header-btnH-color) !important;
 }
-
 /* End nav style */
-/* Start Modal */
 /* Modal styles */
 .modal {
   display: none;
@@ -201,7 +195,6 @@ header nav ul li a:hover {
 
 .modal-content {
   background-color: var(--modal-bg);
-  color: var(--main-bg);
   margin: 22% auto;
   padding: 20px;
   width: 23%;
@@ -210,6 +203,7 @@ header nav ul li a:hover {
 }
 .modal-content a {
   cursor: pointer;
+  color: var(--main-bg);
 }
 .modal-content a:hover {
   color: var(--header-btnH-color);
