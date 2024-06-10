@@ -32,8 +32,7 @@ window.onscroll = function () {
   scrollFunction();
 };
 function scrollFunction() {
-
-  // Set value for the time that btn should be in the page 
+  // Set value for the time that btn should be in the page
 
   if (
     document.body.scrollTop > 800 ||
@@ -98,3 +97,85 @@ langBtn.addEventListener("click", () => {
   }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const dealershipsLink = document.querySelector(".Car-Shop-1");
+  const financingLink = document.querySelector(".Car-Shop-2");
+  const loginModal = document.getElementById("loginModal");
+  const closeModal = document.querySelector(".modal .close");
+  const loginRegisterBtn = document.querySelector(".Login-Register");
+  const token = localStorage.getItem("token");
+
+  // Update login button based on token presence
+  const updateLoginButton = () => {
+    if (token) {
+      loginRegisterBtn.textContent = "Logout";
+      loginRegisterBtn.href = "#";
+    } else {
+      loginRegisterBtn.textContent = "Sign Up";
+      loginRegisterBtn.href = "../Sign-Up/Login-Register.html";
+    }
+  };
+
+  updateLoginButton();
+
+  loginRegisterBtn.addEventListener("click", (event) => {
+    if (token) {
+      localStorage.clear(); // Clear local storage
+      loginRegisterBtn.textContent = "Sign Up";
+      window.location.reload(); // Reload to reset state
+    }
+  });
+
+  const showModal = () => {
+    if (!token) {
+      // Only show modal if user is not logged in
+      loginModal.style.display = "block";
+    }
+  };
+
+  closeModal.onclick = () => {
+    loginModal.style.display = "none";
+  };
+
+  window.onclick = (event) => {
+    if (event.target === loginModal) {
+      loginModal.style.display = "none";
+    }
+  };
+
+  // Show modal on 75% scroll
+  window.onscroll = () => {
+    const scrollPosition = window.scrollY + window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+
+    if (
+      scrollPosition / documentHeight >= 0.75 &&
+      !localStorage.getItem("modalShown")
+    ) {
+      showModal();
+      localStorage.setItem("modalShown", "true");
+    }
+  };
+
+  const handleNavigation = (event, url) => {
+    if (!token) {
+      event.preventDefault();
+      showModal();
+    } else {
+      window.location.href = url;
+    }
+  };
+
+  dealershipsLink.addEventListener("click", (event) =>
+    handleNavigation(event, "./CarShopOne/CarShopOne.html")
+  );
+  financingLink.addEventListener("click", (event) =>
+    handleNavigation(event, "./CarShopTwo/CarShopTwo.html")
+  );
+
+  // Theme switcher
+  const themeSwitch = document.querySelector(".mode-switch");
+  themeSwitch.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  });
+});

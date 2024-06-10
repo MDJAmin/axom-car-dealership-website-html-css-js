@@ -113,17 +113,6 @@ nav .nav-items a {
 nav .nav-items a:hover {
   color: var(--header-btnH-color);
 }
-.Login-Register {
-  color: white !important;
-  background-color: var(--shadow);
-  border: 1px solid var(--name-color);
-  padding: 10px 30px;
-  font-size: 0.9em;
-  transition: all 0.5s;
-}
-.Login-Register:hover {
-  background-color: var(--header-btnH-color);
-}
 /* End nav style */
 
 /* Start header style */

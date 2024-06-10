@@ -9,13 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
   // Check if token exists
 
   if (token) {
-
     // Token exists, show login success
 
     loginRoot.style.display = "none";
     loginSuccess.style.display = "flex";
   } else {
-
     // Token doesn't exist, show login form
 
     loginRoot.style.display = "flex";
@@ -74,12 +72,30 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("Username or password incorrect");
     }
   });
+});
 
-  // Handle logout btn
+// Dark and light Mood
+// Get items
+let moodBtn = document.querySelector("#Moon");
+document.addEventListener("DOMContentLoaded", () => {
+  const modeSwitch = document.querySelector(".mode-switch");
 
-  logoutButton.addEventListener("click", function () {
-    localStorage.clear(); // Clear local storage
-    // loginRoot.style.display = "flex"; // Show login form
-    loginSuccess.style.display = "none"; // Hide success message
+  // Save in local Storage
+
+  const darkModeStored = localStorage.getItem("darkMode");
+
+  // Check if its dark or light
+
+  if (darkModeStored === "true") {
+    document.documentElement.classList.add("dark");
+    modeSwitch.classList.add("active");
+  }
+  modeSwitch.addEventListener("click", () => {
+    document.documentElement.classList.toggle("dark");
+    modeSwitch.classList.toggle("active");
+    localStorage.setItem(
+      "darkMode",
+      document.documentElement.classList.contains("dark")
+    );
   });
 });
