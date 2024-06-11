@@ -17,9 +17,11 @@
   --header-btnH-color: #0e7edbf0;
   --header-Card-color: #0e7fdb41;
   --card-bg-text: #343434;
-  --shadow: #232323;
+  --shadow: black;
+  --Box-shadow: #2323239f;
   --shadow-btn: #232323;
-  --modal-bg: black;
+  /* --body-color: linear-gradient(135deg, blue, white); */
+  --footer-bg:white;
 }
 .dark:root {
   --main-bg: #000000;
@@ -29,8 +31,10 @@
   --header-btnH-color: #b8860b;
   --header-Card-color: #b8870b3f;
   --card-bg-text: #ffffff;
+  --Box-shadow: #ffffffa8;
   --shadow-btn: #000000;
-  --modal-bg: rgb(255, 255, 255);
+  /* --body-color: linear-gradient(135deg, black, rgb(194, 165, 0)); */
+  --footer-bg:rgb(0, 0, 0);
 }
 html {
   background-color: var(--main-bg);
@@ -310,39 +314,6 @@ div.section-1-div-product-img-1:active img#section-1-product-img-1 {
 div.section-1-div-product-img-1:active p {
   opacity: 1;
 }
-/* img#section-1-product-img-2 {
-  position: absolute;
-  width: 27%;
-  height: 70.2%;
-  top: 15.9%;
-  left: 65%;
-  border-radius: 40px;
-  box-shadow: 1px 3px 4px var(--shadow);
-  transition: all 0.5s;
-  opacity: 1;
-  cursor: pointer;
-}
-img#section-1-product-img-2:hover {
-  left: 45%;
-  top: 20%;
-  opacity: 1;
-}
-img#section-1-product-img-3 {
-  position: absolute;
-  width: 25%;
-  height: 70.5%;
-  top: 15.5%;
-  left: 69%;
-  border-radius: 40px;
-  box-shadow: 1px 3px 4px var(--shadow);
-  transition: all 0.5s;
-  opacity: 1;
-  cursor: pointer;
-}
-img#section-1-product-img-3:hover {
-  scale: 1.05;
-} */
-
 /* End section-1 style */
 /* End header style */
 
