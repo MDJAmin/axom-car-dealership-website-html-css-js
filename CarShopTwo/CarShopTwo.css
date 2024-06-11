@@ -79,6 +79,7 @@ nav {
   right: 0;
   z-index: 1;
   box-shadow: -1px -9px 20px var(--header-btnH-color);
+  user-select: none;
 }
 nav .nav-header-items {
   display: flex;
@@ -115,6 +116,7 @@ nav .nav-items a:hover {
 /* Start header style */
 .header-items {
   position: relative;
+  user-select: none;
 }
 header .header-items img {
   width: 100%;
@@ -139,6 +141,7 @@ header .header-items a:hover {
 /* Start section-1 style */
 .section-1 .Search-section {
   text-align: center;
+  user-select: none;
 }
 .section-1 .Search-section input {
   margin: 50px 0px;
@@ -417,11 +420,13 @@ div.Subscribe {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  user-select: none;
 }
 div.Subscribe-form h5 {
   color: var(--name-color);
   font-size: 1.3em;
   margin-top: 100px;
+  user-select: none;
 }
 div.Subscribe-form input {
   margin: 20px 0px;
@@ -432,6 +437,7 @@ div.Subscribe-form input {
   padding-right: 200px;
   box-shadow: 1px 0px 1px;
   outline: none;
+  user-select: none;
 }
 div.Subscribe-form a {
   color: white;
@@ -445,6 +451,7 @@ div.Subscribe-form a {
   position: relative;
   top: -1.3px;
   left: -5px;
+  user-select: none;
 }
 div.Subscribe-form a:hover {
   background-color: var(--header-btnH-color);
