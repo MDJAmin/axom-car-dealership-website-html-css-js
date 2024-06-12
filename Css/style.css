@@ -43,6 +43,8 @@ html {
   transition: all 0.5s;
   color: var(--name-color);
   scroll-behavior: smooth;
+}
+body{
   overflow-x: hidden;
 }
 /* Start nav style */
