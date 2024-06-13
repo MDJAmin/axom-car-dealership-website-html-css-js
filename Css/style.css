@@ -51,6 +51,7 @@ body{
 nav {
   background-color: var(--nav-bg);
   position: fixed;
+  /* width: 100%; */
   top: 0;
   left: 0;
   right: 0;
@@ -705,6 +706,11 @@ font-size: 0.8em;
   }
   p.price::after {
     opacity: 0;
+  }
+}
+@media screen and (max-width: 1420px){
+  .section-2-product-div div img{
+    width: 200PX;
   }
 }
 @media screen and (max-width: 1210px){
