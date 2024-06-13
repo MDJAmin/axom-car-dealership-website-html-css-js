@@ -690,10 +690,13 @@ footer a:hover {
     width: 500px;
   }
   .section-4 .section-4-Description p{
-font-size: 0.7em;
+font-size: 0.8em;
   }
 }
 @media screen and (max-width: 1420px) {
+  .section-3 .section-3-product-div img {
+    width: 150px;
+  }
   .section-3 div.section-3-product-div {
     justify-content: center;
   }
@@ -702,5 +705,13 @@ font-size: 0.7em;
   }
   p.price::after {
     opacity: 0;
+  }
+}
+@media screen and (max-width: 1210px){
+  .section-3-product-div{
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
   }
 }
