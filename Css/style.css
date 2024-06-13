@@ -44,10 +44,40 @@ html {
   color: var(--name-color);
   scroll-behavior: smooth;
 }
-body{
+body {
   overflow-x: hidden;
 }
 /* Start nav style */
+i.hamburger-menu {
+  font-size: 2.2em;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: none;
+}
+i.hamburger-menu:hover {
+  color: var(--header-btnH-color);
+}
+.nav-items{
+  position: relative;
+}
+ul.hamburger-menu-items{
+  display: none;
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  right: 0;
+}
+ul.hamburger-menu-items > a{
+  display: none;
+  color: var(--name-color);
+  transition: all 0.5s;
+}
+ul.hamburger-menu-items > button{
+  display: none;
+}
+ul.hamburger-menu-items > a:hover{
+  color: var(--header-btnH-color);
+}
 nav {
   background-color: var(--nav-bg);
   position: fixed;
@@ -135,7 +165,7 @@ ul#nav-items a.Home::before {
   transition: all 0.5s;
   background-color: var(--header-btnH-color);
 }
-ul#nav-items a.Home:hover::before {
+ul#nav-items li.pages a.Home:hover::before {
   width: 2.6%;
 }
 ul#nav-items a.Car-Shop-1::before {
@@ -147,7 +177,7 @@ ul#nav-items a.Car-Shop-1::before {
   transition: all 0.5s;
   background-color: var(--header-btnH-color);
 }
-ul#nav-items a.Car-Shop-1:hover::before {
+ul#nav-items li.pages a.Car-Shop-1:hover::before {
   width: 5%;
 }
 ul#nav-items a.Car-Shop-2::before {
@@ -159,7 +189,7 @@ ul#nav-items a.Car-Shop-2::before {
   transition: all 0.5s;
   background-color: var(--header-btnH-color);
 }
-ul#nav-items a.Car-Shop-2:hover::before {
+ul#nav-items li.pages a.Car-Shop-2:hover::before {
   width: 4.1%;
 }
 ul#nav-items a.Search {
@@ -261,9 +291,6 @@ header .section-1 {
   align-items: center;
   justify-content: space-between;
 }
-header .section-1 div.section-1-product-dis {
-  margin-bottom: 6%;
-}
 header .section-1 div h3 {
   font-size: 3em;
   overflow: hidden;
@@ -324,6 +351,7 @@ div.section-1-div-product-img-1:active p {
 
 /* Start main style */
 /* Start section-2 style */
+
 .section-2 {
   display: flex;
   flex-direction: column;
@@ -690,8 +718,8 @@ footer a:hover {
   .section-4 div.section-4-div-img {
     width: 500px;
   }
-  .section-4 .section-4-Description p{
-font-size: 0.8em;
+  .section-4 .section-4-Description p {
+    font-size: 0.9em;
   }
 }
 @media screen and (max-width: 1420px) {
@@ -708,16 +736,77 @@ font-size: 0.8em;
     opacity: 0;
   }
 }
-@media screen and (max-width: 1420px){
-  .section-2-product-div div img{
-    width: 200PX;
+@media screen and (max-width: 1420px) {
+  .section-2-product-div div img {
+    width: 250px;
   }
 }
-@media screen and (max-width: 1210px){
-  .section-3-product-div{
+@media screen and (max-width: 1210px) {
+  .section-3-product-div {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-
+  }
+  header .section-1 div.section-1-product-dis {
+    margin-top: 6%;
+  }
+  header .section-1 div h3 {
+    font-size: 2em;
+  }
+  header .section-1 div p {
+    margin-top: 35px;
+    font-size: 1em;
+  }
+  header .section-1 > div > a{
+    bottom: -50px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  i.hamburger-menu{
+    display: block;
+  }
+  li.pages a{
+    display: none;
+  }
+  li.pages button{
+    display: none;
+  }
+  header .section-1 div.section-1-product-dis {
+    margin-top: 6%;
+  }
+  header .section-1 div h3 {
+    font-size: 1.6em;
+  }
+  header .section-1 div p {
+    margin-top: 35px;
+    font-size: 0.7em;
+  }
+  header .section-1 > div > a{
+    bottom: -50px;
+    padding: 10px 35px;
+    font-size: 0.8em;
+  }
+  .section-2 h2{
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 900px){
+  img#section-1-product-img-1{
+    width: 400px;
+  }
+  header .section-1 div.section-1-product-dis {
+    margin-top: 6%;
+  }
+  header .section-1 div h3 {
+    font-size: 1.1em;
+  }
+  header .section-1 div p {
+    margin-top: 35px;
+    font-size: 0.5em;
+  }
+  header .section-1 > div > a{
+    bottom: -50px;
+    padding: 10px 35px;
+    font-size: 0.8em;
   }
 }
