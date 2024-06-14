@@ -13,6 +13,7 @@ html {
   color: var(--name-color);
   scroll-behavior: smooth;
   overflow-x: hidden;
+  user-select: none;
 }
 /* Root */
 :root {

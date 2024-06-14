@@ -14,7 +14,7 @@
   --box-bg: #ebebebe8;
   --nav-bg: rgb(240, 235, 235);
   --name-color: #232323;
-  --header-btnH-color: #0e7edbf0;
+  --header-btnH-color: #0e7fdb;
   --header-Card-color: #0e7fdb41;
   --card-bg-text: #343434;
   --shadow: black;
@@ -43,6 +43,7 @@ html {
   transition: all 0.5s;
   color: var(--name-color);
   scroll-behavior: smooth;
+  user-select: none;
 }
 body {
   overflow-x: hidden;
@@ -471,7 +472,7 @@ div.section-1-div-product-img-1:active p {
   cursor: pointer;
 }
 .section-3-product-div img:hover {
-  scale: 1.03;
+  scale: 1.01;
 }
 .section-3 .section-3-Description-div h3 {
   font-size: 2em;
@@ -619,7 +620,7 @@ div.section-4-Description p:first-child {
   border-right: 1px solid var(--name-color);
   border-top: 1px solid var(--name-color);
   border-bottom: 1px solid var(--name-color);
-  padding: 12.5px 45px;
+  padding: 13px 45px;
   font-size: 0.8em;
   transition: all 0.5s;
   position: relative;
@@ -940,11 +941,33 @@ footer a:hover {
   .section-2 h2 {
     font-size: 0.8em;
   }
+  .section-3 .section-3-Description-div h3 {
+    font-size: 1.5em;
+  }
+  .section-3 .section-3-Description-div p {
+    font-size: 0.9em;
+  }
+  .section-3 .section-3-Description-div div {
+    margin-top: 20px;
+  }
+  .section-3 .section-3-Description-div div a {
+    padding: 15px 25px;
+    font-size: 0.6em;
+    border-radius: 9px;
+    transition: all 0.5s;
+  }
   .section-4 img {
     width: 400px;
   }
   .section-4 div.section-4-div-img {
     width: 400px;
+  }
+  .section-4 div.img-cards {
+    width: 150px;
+    height: 80PX;
+  }
+  .section-4 div.img-cards p {
+    font-size: 0.9em;
   }
   footer div.title {
     display: none;
@@ -960,14 +983,90 @@ footer a:hover {
   }
 }
 @media screen and (max-width: 500px) {
-  img#section-1-product-img-1 {
-    width: 200px;
-    border-radius: 20px;
-  }
   li.pages button {
     position: absolute;
     right: 18%;
     top: 28.2%;
     width: 30px;
+  }
+  header .section-1 {
+    margin-top: 15px;
+  }
+  img#section-1-product-img-1 {
+    width: 200px;
+    border-radius: 20px;
+    height: 155px;
+  }
+  header .section-1 div h3 {
+    font-size: 0.8em;
+  }
+  header .section-1 div p {
+    margin-top: 20px;
+    font-size: 0.4em;
+  }
+  header .section-1 > div > a {
+    bottom: -20px;
+    padding: 5px 10px;
+    font-size: 0.5em;
+  }
+  .section-2 {
+    margin-top: 5px;
+  }
+  div.section-2-product-div div img {
+    width: 100px;
+    border-radius: 9px;
+  }
+  div.section-2-product-div div p {
+    font-size: 0.7em;
+  }
+  .section-2 h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+    position: relative;
+    left: -42px;
+  }
+  .section-3 .section-3-Description-div h3 {
+    font-size: 1.2em;
+  }
+  .section-3 .section-3-Description-div p {
+    font-size: 0.8em;
+  }
+  .section-3 .section-3-Description-div div {
+    margin-top: 20px;
+  }
+  .section-3 .section-3-Description-div div a {
+    padding: 7px 15px;
+    font-size: 0.6em;
+    border-radius: 9px;
+    transition: all 0.5s;
+  }
+  div.section-3-product-div div img {
+    width: 120px !important;
+  }
+  .section-4 {
+    margin-top: 10px;
+  }
+  .section-4 img {
+    width: 300px;
+  }
+  .section-4 div.section-4-div-img {
+    width: 300px;
+  }
+  .section-4 div.img-cards {
+    width: 120px;
+    height: 60PX;
+  }
+  .section-4 div.img-cards p {
+    font-size: 0.7em;
+  }
+  .section-4 div.img-cards {
+    width: 120px;
+    height: 60PX;
+  }
+  .section-4 div.img-cards p {
+    font-size: 0.7em;
+  }
+  .section-4-product-div-1{
+    margin-left: 30PX;
   }
 }

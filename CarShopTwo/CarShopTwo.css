@@ -12,6 +12,7 @@ html {
   scroll-behavior: smooth;
   background-color: var(--main-bg);
   overflow-x: hidden;
+  user-select: none;
 }
 
 body {
