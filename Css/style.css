@@ -800,6 +800,11 @@ footer a:hover {
     width: 250px;
   }
 }
+@media screen and (max-width: 1220px){
+  .section-3 .section-3-Description-div div {
+    margin-top: 20px;
+  }
+}
 @media screen and (max-width: 1210px) {
   header .section-1 div.section-1-product-dis {
     margin-top: 6%;
@@ -899,6 +904,13 @@ footer a:hover {
   div.section-2-product-div div img {
     width: 160px;
   }
+  .section-3 .section-3-Description-div div {
+    margin-top: 20px;
+  }
+  .section-3 .section-3-Description-div div a {
+    padding: 10px 20px;
+    font-size: 0.8em;
+  }
 }
 @media screen and (max-width: 750px) {
   img#section-1-product-img-1 {
@@ -908,11 +920,19 @@ footer a:hover {
   div.section-2-product-div div img {
     width: 140px;
   }
+  .section-3 .section-3-Description-div div {
+    margin-top: 20px;
+  }
+  
 }
 @media screen and (max-width: 650px) {
   div.section-2-product-div div img {
     width: 125px;
   }
+  .section-3 .section-3-Description-div div {
+    margin-top: 20px;
+  }
+  
 }
 @media screen and (max-width: 600px) {
   img#section-1-product-img-1 {
@@ -953,8 +973,6 @@ footer a:hover {
   .section-3 .section-3-Description-div div a {
     padding: 15px 25px;
     font-size: 0.6em;
-    border-radius: 9px;
-    transition: all 0.5s;
   }
   .section-4 img {
     width: 400px;
