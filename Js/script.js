@@ -79,10 +79,8 @@ let langMenu = document.querySelector(".lang-menu");
 langBtn.addEventListener("click", () => {
   if (langMenu.style.opacity === "0") {
     langMenu.style.opacity = 1;
-    langMenu.style.display = "block";
   } else {
     langMenu.style.opacity = 0;
-    langMenu.style.display = "none";
   }
 });
 

@@ -686,17 +686,16 @@ footer .footer-sec-3:hover h5 {
 }
 .lang-menu {
   opacity: 0;
-  transition: all 0.2s !important;
+  transition: all 0.6s !important;
 }
 .lang-menu p {
   margin: 10px;
-  transition: all 0.4s;
+  transition: all 0.4s !important;
 }
 .lang-menu p:hover {
   color: var(--header-btnH-color);
 }
 .Show-lang {
-  display: inline-block;
   opacity: 0;
 }
 footer a {
