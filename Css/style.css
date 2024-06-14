@@ -834,7 +834,7 @@ footer a:hover {
   }
   li.pages button {
     position: absolute;
-    right: 3%;
+    right: 15%;
     top: 28.2%;
     width: 30px;
   }
@@ -963,5 +963,11 @@ footer a:hover {
   img#section-1-product-img-1 {
     width: 200px;
     border-radius: 20px;
+  }
+  li.pages button {
+    position: absolute;
+    right: 18%;
+    top: 28.2%;
+    width: 30px;
   }
 }
