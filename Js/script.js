@@ -84,8 +84,6 @@ langBtn.addEventListener("click", () => {
   }
 });
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
   const dealershipsLink = document.querySelector(".Car-Shop-1");
   const financingLink = document.querySelector(".Car-Shop-2");
@@ -158,23 +156,22 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// hamburger menu handel visibility
 
-// hamburger menu handel visibility 
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburgerMenu = document.querySelector(".hamburger-menu");
+  const menuItems = document.querySelector(".hamburger-menu-items");
 
-document.addEventListener('DOMContentLoaded', () => {
-  const hamburgerMenu = document.querySelector('.hamburger-menu');
-  const menuItems = document.querySelector('.hamburger-menu-items');
-
-  hamburgerMenu.addEventListener('click', () => {
-    menuItems.classList.toggle('show');
+  hamburgerMenu.addEventListener("click", () => {
+    menuItems.classList.toggle("show");
   });
 
   const handleResize = () => {
     if (window.innerWidth >= 769) {
-      menuItems.classList.remove('show');
+      menuItems.classList.remove("show");
     }
   };
 
-  window.addEventListener('resize', handleResize);
-  window.addEventListener('load', handleResize);
+  window.addEventListener("resize", handleResize);
+  window.addEventListener("load", handleResize);
 });

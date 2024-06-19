@@ -32,5 +32,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
   showItem(currentIndex);
 });
-
-// localStorage.clear("")

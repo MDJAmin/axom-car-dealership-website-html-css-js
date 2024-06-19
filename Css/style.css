@@ -20,7 +20,6 @@
   --shadow: black;
   --Box-shadow: #2323239f;
   --shadow-btn: #232323;
-  /* --body-color: linear-gradient(135deg, blue, white); */
   --footer-bg: white;
   --modal-bg: rgb(0, 0, 0);
 }
@@ -34,7 +33,6 @@
   --card-bg-text: #ffffff;
   --Box-shadow: #ffffffa8;
   --shadow-btn: #000000;
-  /* --body-color: linear-gradient(135deg, black, rgb(194, 165, 0)); */
   --footer-bg: rgb(0, 0, 0);
   --modal-bg: rgb(255, 255, 255);
 }
@@ -799,7 +797,7 @@ footer a:hover {
     width: 250px;
   }
 }
-@media screen and (max-width: 1220px){
+@media screen and (max-width: 1220px) {
   .section-3 .section-3-Description-div div {
     margin-top: 20px;
   }
@@ -922,7 +920,6 @@ footer a:hover {
   .section-3 .section-3-Description-div div {
     margin-top: 20px;
   }
-  
 }
 @media screen and (max-width: 650px) {
   div.section-2-product-div div img {
@@ -931,7 +928,6 @@ footer a:hover {
   .section-3 .section-3-Description-div div {
     margin-top: 20px;
   }
-  
 }
 @media screen and (max-width: 600px) {
   img#section-1-product-img-1 {
@@ -981,7 +977,7 @@ footer a:hover {
   }
   .section-4 div.img-cards {
     width: 150px;
-    height: 80PX;
+    height: 80px;
   }
   .section-4 div.img-cards p {
     font-size: 0.9em;
@@ -1071,19 +1067,19 @@ footer a:hover {
   }
   .section-4 div.img-cards {
     width: 120px;
-    height: 60PX;
+    height: 60px;
   }
   .section-4 div.img-cards p {
     font-size: 0.7em;
   }
   .section-4 div.img-cards {
     width: 120px;
-    height: 60PX;
+    height: 60px;
   }
   .section-4 div.img-cards p {
     font-size: 0.7em;
   }
-  .section-4-product-div-1{
-    margin-left: 30PX;
+  .section-4-product-div-1 {
+    margin-left: 30px;
   }
 }

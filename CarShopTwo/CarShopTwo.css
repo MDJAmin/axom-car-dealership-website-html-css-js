@@ -19,9 +19,6 @@ body {
   background: var(--body-color);
   transition: all 0.5s;
 }
-/* body{
-  background: linear-gradient(135deg, black, rgb(233, 199, 7));
-} */
 
 /* Root */
 :root {
@@ -37,7 +34,7 @@ body {
   --Box-shadow: #2323239f;
   --shadow-btn: #232323;
   --body-color: linear-gradient(135deg, blue, white);
-  --footer-bg:white;
+  --footer-bg: white;
 }
 .dark:root {
   --main-bg: #000000;
@@ -50,7 +47,7 @@ body {
   --Box-shadow: #ffffffa8;
   --shadow-btn: #000000;
   --body-color: linear-gradient(135deg, black, rgb(194, 165, 0));
-  --footer-bg:rgb(0, 0, 0);
+  --footer-bg: rgb(0, 0, 0);
 }
 .mode-switch {
   background-color: transparent;
@@ -548,7 +545,7 @@ i.bxl-instagram:hover {
 footer > div {
   padding: 0 5%;
 }
-footer div.Top-btn{
+footer div.Top-btn {
   transition: all 0.5s;
 }
 footer div.Top-btn a {
@@ -557,7 +554,6 @@ footer div.Top-btn a {
   padding: 12px;
   justify-content: center;
   background-color: var(--name-color);
-
 }
 footer div.Top-btn a:hover {
   background-color: var(--header-btnH-color);
