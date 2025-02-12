@@ -166,7 +166,7 @@ li#Logo-brandname #Logo {
 li#Logo-brandname #Logo:hover {
   scale: 1.1;
 }
-.Login-Register {
+.Login-Register, .Login-Register-menu {
   color: white !important;
   background-color: var(--shadow);
   border: 1px solid var(--name-color);
@@ -174,7 +174,7 @@ li#Logo-brandname #Logo:hover {
   font-size: 0.9em;
   transition: all 0.5s;
 }
-.Login-Register:hover {
+.Login-Register:hover , .Login-Register-menu:hover {
   color: white !important;
   background-color: var(--header-btnH-color);
 }
@@ -386,6 +386,9 @@ div.section-1-div-product-img-1 p {
   transition: all 0.3s;
   opacity: 0;
 }
+.section-1-div-product-img-1:hover{
+  transform: scale(1.1);
+}
 img#section-1-product-img-1 {
   display: flex;
   width: 100%;
@@ -397,12 +400,7 @@ img#section-1-product-img-1 {
   opacity: 1;
   cursor: pointer;
 }
-div.section-1-div-product-img-1:active img#section-1-product-img-1 {
-  scale: 0.8;
-}
-div.section-1-div-product-img-1:active p {
-  opacity: 1;
-}
+
 /* End section-1 style */
 /* End header style */
 

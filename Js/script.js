@@ -90,28 +90,39 @@ document.addEventListener("DOMContentLoaded", () => {
   const loginModal = document.getElementById("loginModal");
   const closeModal = document.querySelector(".modal .close");
   const loginRegisterBtn = document.querySelector(".Login-Register");
+  const loginRegisterMenu = document.querySelector(".Login-Register-menu");
   const token = localStorage.getItem("token");
   // Update login button based on token presence
   const updateLoginButton = () => {
     if (token) {
       loginRegisterBtn.textContent = "Logout";
       loginRegisterBtn.href = "#";
+      loginRegisterMenu.textContent = "Logout"
+      loginRegisterMenu.href = "#"
     } else {
       loginRegisterBtn.textContent = "Sign Up";
       loginRegisterBtn.href = "../Sign-Up/Login-Register.html";
+      loginRegisterMenu.textContent = "Sign Up"
+      loginRegisterMenu.href = "../Sign-Up/Login-Register.html"
     }
   };
   updateLoginButton();
   loginRegisterBtn.addEventListener("click", (event) => {
     if (token) {
-      localStorage.clear(); // Clear local storage
+      localStorage.clear();
       loginRegisterBtn.textContent = "Sign Up";
-      window.location.reload(); // Reload to reset state
+      window.location.reload();
+    }
+  });
+  loginRegisterMenu.addEventListener("click", (event) => {
+    if (token) {
+      localStorage.clear();
+      loginRegisterMenu.textContent = "Sign Up";
+      window.location.reload();
     }
   });
   const showModal = () => {
     if (!token) {
-      // Only show modal if user is not logged in
       loginModal.style.display = "block";
     }
   };
@@ -157,7 +168,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // hamburger menu handel visibility
-
 document.addEventListener("DOMContentLoaded", () => {
   const hamburgerMenu = document.querySelector(".hamburger-menu");
   const menuItems = document.querySelector(".hamburger-menu-items");
