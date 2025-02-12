@@ -199,7 +199,7 @@ label {
   color: var(--name-color);
 }
 
-#email {
+#username {
   color: var(--name-color);
 }
 
@@ -302,6 +302,41 @@ a.ssolink {
   font-weight: 600;
   margin: 0 10px;
 }
+
+.listing{
+  display: flex;
+  flex-direction: column;
+}
+
+.listing div.lists{
+  display: flex;
+}
+
+
+.Username_Password{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  gap: 20px;
+}
+
+.Username_Password p {
+  display: flex; 
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  color: var(--card-bg-text);
+}
+
+.Username_Password p span{
+  color: var(--card-bg-text);
+  transition: color .5s;
+}
+
+.Username_Password p span:hover{
+color: var(--header-btnH-color);
+}
+
 
 .login-success {
   display: flex;

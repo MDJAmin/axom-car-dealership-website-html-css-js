@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
   loginForm.addEventListener("submit", async function (e) {
     e.preventDefault();
 
-    const email = document.getElementById("emailInput").value;
+    const username = document.getElementById("usernameInput").value;
     const password = document.getElementById("passwordInput").value;
 
     try {
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          username: email,
+          username: username,
           password: password,
         }),
       });
