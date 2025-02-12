@@ -101,9 +101,9 @@ document.addEventListener("DOMContentLoaded", () => {
       loginRegisterMenu.href = "#"
     } else {
       loginRegisterBtn.textContent = "Sign Up";
-      loginRegisterBtn.href = "../Sign-Up/Login-Register.html";
+      loginRegisterBtn.href = "./Sign-Up/Login-Register.html";
       loginRegisterMenu.textContent = "Sign Up"
-      loginRegisterMenu.href = "../Sign-Up/Login-Register.html"
+      loginRegisterMenu.href = "./Sign-Up/Login-Register.html"
     }
   };
   updateLoginButton();

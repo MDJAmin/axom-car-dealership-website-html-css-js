@@ -43,9 +43,6 @@ html {
   scroll-behavior: smooth;
   user-select: none;
 }
-body {
-  overflow-x: hidden;
-}
 /* Start nav style */
 /* hamburger menu start style */
 i.hamburger-menu {
@@ -88,6 +85,7 @@ i.hamburger-menu {
 ul.hamburger-menu-items {
   opacity: 0;
   flex-direction: column;
+  visibility: hidden;
   gap: 0px;
   position: absolute;
   right: 10px;
@@ -103,6 +101,7 @@ ul.hamburger-menu-items a {
   opacity: 0;
 }
 ul.hamburger-menu-items.show {
+  visibility: visible;
   opacity: 1;
   gap: 20px;
   height: 222px;

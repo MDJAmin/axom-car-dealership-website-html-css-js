@@ -12,7 +12,6 @@ html {
   transition: all 0.2s;
   color: var(--name-color);
   scroll-behavior: smooth;
-  overflow-x: hidden;
   user-select: none;
 }
 /* Root */
@@ -556,17 +555,6 @@ footer div#footer-items a:hover {
   transition: all 1.3s;
 }
 /* animation 3 */
-.hiddenCardsOne {
-  opacity: 0;
-  transition: all 1.5s;
-  transform: translateX(100%);
-}
-.hiddenCardsTwo {
-  opacity: 0;
-  transition: all 1.5s;
-  transform: translateX(-100%);
-}
-/* animation 4 */
 .up-hidden-input {
   opacity: 0;
   transition: all 1.5s;
