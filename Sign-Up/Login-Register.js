@@ -25,8 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const togglePasswordIcon = togglePassword.querySelector("i");
 
   togglePassword.addEventListener("click", function () {
-    const type =
-      passwordInput.getAttribute("type") === "password" ? "text" : "password";
+    const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
     passwordInput.setAttribute("type", type);
 
     // Toggle the eye icon
@@ -93,9 +92,6 @@ document.addEventListener("DOMContentLoaded", () => {
   modeSwitch.addEventListener("click", () => {
     document.documentElement.classList.toggle("dark");
     modeSwitch.classList.toggle("active");
-    localStorage.setItem(
-      "darkMode",
-      document.documentElement.classList.contains("dark")
-    );
+    localStorage.setItem("darkMode", document.documentElement.classList.contains("dark"));
   });
 });

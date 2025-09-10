@@ -3,8 +3,8 @@
   margin: 0;
   box-sizing: border-box;
   word-wrap: break-word;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Helvetica Neue, Ubuntu, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Ubuntu,
+    sans-serif;
 }
 
 html {
@@ -146,8 +146,7 @@ h1 {
   max-width: 448px;
   background: var(--box-bg);
   border-radius: 4px;
-  box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px,
-    rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+  box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
 }
 
 .mode-switch {
@@ -252,12 +251,9 @@ label {
 input[type="submit"] {
   background-color: var(--header-btnH-color);
   box-shadow: var(--header-btnH-color) 0px 0px 0px 0px,
-    var(--header-btnH-color) 0px 0px 0px 0px,
-    var(--header-btnH-color) 0px 1px 1px 0px,
-    var(--header-Card-color) 0px 0px 0px 1px,
-    var(--header-btnH-color) 0px 0px 0px 0px,
-    var(--header-btnH-color) 0px 0px 0px 0px,
-    var(--header-btnH-color) 0px 2px 5px 0px;
+    var(--header-btnH-color) 0px 0px 0px 0px, var(--header-btnH-color) 0px 1px 1px 0px,
+    var(--header-Card-color) 0px 0px 0px 1px, var(--header-btnH-color) 0px 0px 0px 0px,
+    var(--header-btnH-color) 0px 0px 0px 0px, var(--header-btnH-color) 0px 2px 5px 0px;
   color: #fff;
   font-weight: 600;
   cursor: pointer;
@@ -303,17 +299,16 @@ a.ssolink {
   margin: 0 10px;
 }
 
-.listing{
+.listing {
   display: flex;
   flex-direction: column;
 }
 
-.listing div.lists{
+.listing div.lists {
   display: flex;
 }
 
-
-.Username_Password{
+.Username_Password {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
@@ -321,22 +316,21 @@ a.ssolink {
 }
 
 .Username_Password p {
-  display: flex; 
+  display: flex;
   gap: 10px;
   align-items: center;
   text-align: center;
   color: var(--card-bg-text);
 }
 
-.Username_Password p span{
+.Username_Password p span {
   color: var(--card-bg-text);
-  transition: color .5s;
+  transition: color 0.5s;
 }
 
-.Username_Password p span:hover{
-color: var(--header-btnH-color);
+.Username_Password p span:hover {
+  color: var(--header-btnH-color);
 }
-
 
 .login-success {
   display: flex;

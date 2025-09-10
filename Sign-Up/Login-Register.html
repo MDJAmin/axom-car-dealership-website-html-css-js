@@ -1,99 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="icon" href="../Assets/Logo/Default_A_logo_0_5df46f22-3df3-4e4f-af8d-a0494a3b3f95_0.png"
-        type="image/x-icon">
-    <link rel="stylesheet" href="./Login-Register.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="icon"
+      href="../Assets/Logo/Default_A_logo_0_5df46f22-3df3-4e4f-af8d-a0494a3b3f95_0.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="./Login-Register.css"
+    />
     <title>Login</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="login-root">
-        <div class="box-root flex-flex flex-direction--column" style="min-height: 100vh;flex-grow: 1;">
-            <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
-                <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
-                    <h1 class="animate__animated animate__fadeInDown">Login Form</h1>
-                </div>
-                <div class="formbg-outer">
-                    <div class="formbg animate__animated animate__flipInX">
-                        <div class="formbg-inner padding-horizontal--48">
-                            <button id="Moon" class="mode mode-switch" title="Switch Theme">
-                                <svg class="moon" fill="none" stroke="currentColor" stroke-linecap="round"
-                                    stroke-linejoin="round" stroke-width="2" width="36" height="36" viewBox="0 0 24 24">
-                                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
-                                </svg>
-                            </button>
-                            <span class="padding-bottom--15">Sign in to your account</span>
-                            <form id="stripe-login" autocomplete="off">
-                                <div class="field padding-bottom--24">
-                                    <label for="usernameInput">username</label>
-                                    <input type="text" name="username" id="usernameInput" autocomplete="off">
-                                </div>
-                                <div class="field padding-bottom--24">
-                                    <div class="grid--50-50">
-                                        <label for="passwordInput">Password</label>
-                                        <div class="reset-pass">
-                                            <a href="#" class="Forgot" id="Link-p">Forgot your password?</a>
-                                        </div>
-                                    </div>
-                                    <div class="password-container">
-                                        <input type="password" name="password" id="passwordInput" autocomplete="off">
-                                        <button type="button" id="togglePassword" class="toggle-password">
-                                            <i class="bx bx-show"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="field field-checkbox padding-bottom--24 flex-flex align-center">
-                                    <label for="checkbox">
-                                        <input type="checkbox" name="checkbox">
-                                        <p id="checkbox-sentence">Stay signed in for a week </p>
-                                        <span class="custom-checkbox"></span>
-                                    </label>
-                                </div>
-                                <div class="field padding-bottom--24">
-                                    <input type="submit" name="submit" value="Continue">
-                                </div>
-                                <div class="field">
-                                    <a class="ssolink" href="#" id="Link-p">Use single sign-on (Google) instead</a>
-                                </div>
-                            </form>
-                        </div>
+      <div
+        class="box-root flex-flex flex-direction--column"
+        style="min-height: 100vh; flex-grow: 1"
+      >
+        <div
+          class="box-root padding-top--24 flex-flex flex-direction--column"
+          style="flex-grow: 1; z-index: 9"
+        >
+          <div
+            class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center"
+          >
+            <h1 class="animate__animated animate__fadeInDown">Login Form</h1>
+          </div>
+          <div class="formbg-outer">
+            <div class="formbg animate__animated animate__flipInX">
+              <div class="formbg-inner padding-horizontal--48">
+                <button
+                  id="Moon"
+                  class="mode mode-switch"
+                  title="Switch Theme"
+                >
+                  <svg
+                    class="moon"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    width="36"
+                    height="36"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                  </svg>
+                </button>
+                <span class="padding-bottom--15">Sign in to your account</span>
+                <form
+                  id="stripe-login"
+                  autocomplete="off"
+                >
+                  <div class="field padding-bottom--24">
+                    <label for="usernameInput">username</label>
+                    <input
+                      type="text"
+                      name="username"
+                      id="usernameInput"
+                      autocomplete="off"
+                    />
+                  </div>
+                  <div class="field padding-bottom--24">
+                    <div class="grid--50-50">
+                      <label for="passwordInput">Password</label>
+                      <div class="reset-pass">
+                        <a
+                          href="#"
+                          class="Forgot"
+                          id="Link-p"
+                          >Forgot your password?</a
+                        >
+                      </div>
                     </div>
-                    
-                    <div class="footer-link padding-top--24 animate__animated animate__fadeInUp">
-                        <span>Don't have an account? <a href="" id="Link-p">Sign up</a></span>
-                        <div class="listing padding-top--24 padding-bottom--24 flex-flex center-center">
-                            <div class="lists">
-                            <span><a href="#">Contact</a></span>
-                            <span><a href="#">Privacy & terms</a></span>
-                        </div>
-                            <div class="Username_Password">
-                                <p>Username:<span>mor_2314</span></p>
-                                <p>Password:<span>83r5^_</span></p>
-                            </div>
-                        </div>
+                    <div class="password-container">
+                      <input
+                        type="password"
+                        name="password"
+                        id="passwordInput"
+                        autocomplete="off"
+                      />
+                      <button
+                        type="button"
+                        id="togglePassword"
+                        class="toggle-password"
+                      >
+                        <i class="bx bx-show"></i>
+                      </button>
                     </div>
-                </div>
+                  </div>
+                  <div class="field field-checkbox padding-bottom--24 flex-flex align-center">
+                    <label for="checkbox">
+                      <input
+                        type="checkbox"
+                        name="checkbox"
+                      />
+                      <p id="checkbox-sentence">Stay signed in for a week</p>
+                      <span class="custom-checkbox"></span>
+                    </label>
+                  </div>
+                  <div class="field padding-bottom--24">
+                    <input
+                      type="submit"
+                      name="submit"
+                      value="Continue"
+                    />
+                  </div>
+                  <div class="field">
+                    <a
+                      class="ssolink"
+                      href="#"
+                      id="Link-p"
+                      >Use single sign-on (Google) instead</a
+                    >
+                  </div>
+                </form>
+              </div>
             </div>
+
+            <div class="footer-link padding-top--24 animate__animated animate__fadeInUp">
+              <span
+                >Don't have an account?
+                <a
+                  href=""
+                  id="Link-p"
+                  >Sign up</a
+                ></span
+              >
+              <div class="listing padding-top--24 padding-bottom--24 flex-flex center-center">
+                <div class="lists">
+                  <span><a href="#">Contact</a></span>
+                  <span><a href="#">Privacy & terms</a></span>
+                </div>
+                <div class="Username_Password">
+                  <p>Username:<span>mor_2314</span></p>
+                  <p>Password:<span>83r5^_</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Hidden login success message -->
-    <div class="login-success" id="loginSuccess" style="display: none;">
-        <img class="success-gif animate__animated animate__bounceIn"
-            src="https://gifdb.com/images/high/animated-batman-dancing-d79ebrj9b138m89f.webp" alt="Batman GIF">
-        <h1 class=" animate__animated animate__fadeInUp">You are logged in!</h1>
-        <div>
-            <a class=" animate__animated animate__fadeInUp" id="Go-back-btn" href="../index.html">
-                Back To Main Page</a>
-        </div>
+    <div
+      class="login-success"
+      id="loginSuccess"
+      style="display: none"
+    >
+      <img
+        class="success-gif animate__animated animate__bounceIn"
+        src="https://gifdb.com/images/high/animated-batman-dancing-d79ebrj9b138m89f.webp"
+        alt="Batman GIF"
+      />
+      <h1 class="animate__animated animate__fadeInUp">You are logged in!</h1>
+      <div>
+        <a
+          class="animate__animated animate__fadeInUp"
+          id="Go-back-btn"
+          href="../index.html"
+        >
+          Back To Main Page</a
+        >
+      </div>
     </div>
     <script src="./Login-Register.js"></script>
-</body>
-
+  </body>
 </html>

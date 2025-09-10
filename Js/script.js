@@ -14,10 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   modeSwitch.addEventListener("click", () => {
     document.documentElement.classList.toggle("dark");
     modeSwitch.classList.toggle("active");
-    localStorage.setItem(
-      "darkMode",
-      document.documentElement.classList.contains("dark")
-    );
+    localStorage.setItem("darkMode", document.documentElement.classList.contains("dark"));
   });
 });
 
@@ -28,10 +25,7 @@ window.onscroll = function () {
 };
 function scrollFunction() {
   // Set value for the time that btn should be in the page
-  if (
-    document.body.scrollTop > 800 ||
-    document.documentElement.scrollTop > 800
-  ) {
+  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
     Topbutton.style.display = "block";
   } else {
     Topbutton.style.display = "none";
@@ -97,13 +91,13 @@ document.addEventListener("DOMContentLoaded", () => {
     if (token) {
       loginRegisterBtn.textContent = "Logout";
       loginRegisterBtn.href = "#";
-      loginRegisterMenu.textContent = "Logout"
-      loginRegisterMenu.href = "#"
+      loginRegisterMenu.textContent = "Logout";
+      loginRegisterMenu.href = "#";
     } else {
       loginRegisterBtn.textContent = "Sign Up";
       loginRegisterBtn.href = "./Sign-Up/Login-Register.html";
-      loginRegisterMenu.textContent = "Sign Up"
-      loginRegisterMenu.href = "./Sign-Up/Login-Register.html"
+      loginRegisterMenu.textContent = "Sign Up";
+      loginRegisterMenu.href = "./Sign-Up/Login-Register.html";
     }
   };
   updateLoginButton();
@@ -138,10 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.onscroll = () => {
     const scrollPosition = window.scrollY + window.innerHeight;
     const documentHeight = document.documentElement.scrollHeight;
-    if (
-      scrollPosition / documentHeight >= 0.75 &&
-      !localStorage.getItem("modalShown")
-    ) {
+    if (scrollPosition / documentHeight >= 0.75 && !localStorage.getItem("modalShown")) {
       showModal();
       localStorage.setItem("modalShown", "true");
     }
